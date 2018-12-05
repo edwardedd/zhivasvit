@@ -1,0 +1,40 @@
+.footer
+  background-color: $whitefooter
+  .upper-footer
+    .logo
+      padding: 20px 0 0 20px
+      .logosvg
+        svg
+          height: 55px
+          width: 205px
+      .abouy_shool, .program, .method, .blog, .reviews, .contacts,
+        font-size: 16px
+        font-weigt: bold
+  .lower-footer
+    font-size: 16px
+    padding: 10px 50px
+    background-color: $whitelast
+    color: $graylasttext
+    .Private-Enterprise
+      color: $blackpearl
+    .Handcrafted
+      color: $blackpearl
+      display: flex
+      .Handcrafted-logo
+        .Handcrafted-svg
+          svg
+            height: 16px
+            width: 20px
+            padding-right: 5px
+            g
+              g
+                path
+                  fill: $blackpearl
+    +breakpoint(small only)
+      display: flex
+      flex-direction: column
+      justify-content: center
+      text-align: center
+      padding: 15px 20px
+      .Handcrafted
+        padding-top: 20px
