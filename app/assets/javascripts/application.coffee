@@ -24,3 +24,10 @@
 #= require popups
 #= require tabs
 #= require links
+
+
+#= require methodology
+#= require dietology
+#= require manual
+#= require slider
+#= require slider_program

@@ -1,18 +1,18 @@
-.header-container
-  position: fixed
-  padding: 16px 30px
-  width: 100%
-  background: transparent
-  display: -webkit-flex
-  display: -moz-flex
-  display: -ms-flex
-  display: -o-flex
-  display: flex
-  justify-content: space-between
-  +transition-property(transform)
-  +transition-duration(1s)
-  +translate(0,-100%)
-  z-index: 11
+// .header-container
+//   position: fixed
+//   padding: 16px 30px
+//   width: 100%
+//   background: transparent
+//   display: -webkit-flex
+//   display: -moz-flex
+//   display: -ms-flex
+//   display: -o-flex
+//   display: flex
+//   justify-content: space-between
+//   +transition-property(transform)
+//   +transition-duration(1s)
+//   +translate(0,-100%)
+//   z-index: 11
 //   &.scrolled, &.visible
 //     +translate(0,0)
 //   
@@ -37,3 +37,397 @@
 //         border-radius: 0
 	
 
+
+
+.header
+  z-index: 3
+  .header-content
+    // .header-logo      
+    .consultation
+      position: fixed
+      top: 5%
+      right: 5%  
+      color: $orange 
+      font-size: 20px 
+      font-family: Comfortaa
+      font-weight: bold  
+      .btn
+        border: 2px solid $orange
+        border-radius: 20px 20px 20px 20px
+    .button_container         
+      position: fixed
+      top: 5%
+      right: 2%
+      height: 25px
+      width: 25px
+      cursor: pointer
+      z-index: 100
+      transition: opacity .25s ease    
+      
+      &:hover 
+        opacity: .7
+      
+        
+      
+      &.active 
+        .top 
+          transform: translateY(11px) translateX(0) rotate(45deg)
+          background-color: #3C484F      
+        .middle 
+          opacity: 0
+          background-color: #3C484F    
+        .bottom 
+          transform: translateY(-11px) translateX(0) rotate(-45deg)
+          background-color: #3C484F
+
+      span 
+        background-color: green
+        border: none
+        height: 5px
+        width: 100%
+        position: absolute
+        top: 0
+        left: 0
+        transition:  all .35s ease
+        cursor: pointer
+        
+        &:nth-of-type(2) 
+          top: 11px
+    
+    
+        &:nth-of-type(3) 
+          top: 22px
+      .circle-hamburger
+        position: fixed
+        top: 5%
+        right: 2%
+        width: 40px
+        height: 40px  
+        border-radius: 50px 
+        border-right: 2px solid $orange
+        border-left: 0px solid $orange
+        border-top: 2px solid $orange
+        border-bottom: 0px solid opacity
+
+  .overlay    
+    background: #F5F5F5
+    top: 0
+    left: 0
+    width: 100%
+    height: 0%
+    opacity: 0
+    visibility: hidden
+    transition: opacity .35s, visibility .35s, height .35s
+    overflow: hidden
+    .image-background
+      .img-bg 
+      height: 70% 
+
+    &.open 
+      opacity: .9
+      visibility: visible
+      height: 100%
+      
+      li 
+        animation: fadeInRight .5s ease forwards
+        animation-delay: .35s
+        
+        &:nth-of-type(2) 
+          animation-delay: .4s
+        
+        &:nth-of-type(3) 
+          animation-delay: .45s
+        
+        &:nth-of-type(4) 
+          animation-delay: .50s
+    .layout1
+      // -webkit-clip-path: polygon(0% 0%, 0% 100%, 25% 100%, 25% 25%, 75% 25%, 75% 75%, 25% 75%, 25% 100%, 100% 100%, 100% 0%)
+      // clip-path: polygon(0% 0%, 0% 100%, 25% 100%, 25% 25%, 75% 25%, 75% 75%, 25% 75%, 25% 100%, 100% 100%, 100% 0%) border-radius: 50%
+      position:absolute
+      top: 20px
+      right: 20px
+      bottom: 20px
+      left: 20px
+      background: white
+      height: 100% 
+      margin-bottom: 100px 
+      height: 70%      
+      border-bottom-left-radius: 700px 250px 
+      border-bottom-right-radius: 700px 250px  
+      
+
+      .header-top
+        width: 10% 
+        
+        .header-top-left
+        .header-top-right
+      .header-middle
+
+        .header-middle-left-up   
+          width: 70% 
+          margin-left: 50px     
+          .up-menu
+            position: flex
+            height: 70%
+            top: 50%
+            transform: translateY(-50%)
+            font-size: 25px
+            font-family: 'Comfortaa ', serif
+            font-weight: 700
+            text-align: center
+            margin-top: 200px 
+          
+            ul 
+              list-style: none
+              padding: 0
+              margin: 0 auto
+              display: flex
+              position: relative
+              height: 100%            
+              li 
+                display: flex
+                width: 25%              
+                min-height: 50px
+                position: relative
+                // opacity: 0   
+                a 
+                  display: flex
+                  position: relative
+                  color: black
+                  text-decoration: none
+                  overflow: hidden
+                  font-family: Comfortaa
+                  
+                  &:hover:after,
+                  &:focus:after,
+                  &:active:after 
+                    width: 100%
+                   
+                  
+                  &:after 
+                    content: ''
+                    position: absolute
+                    bottom: 0
+                    left: 50%
+                    width: 0%
+                    transform: translateX(-50%)
+                    height: 3px
+                    background: green
+                    transition: .35s
+          .down-menu
+            position: flex
+            font-size: 20px
+            font-family: 'Comfortaa ', serif
+            font-weight: 400
+            text-align: center
+            ul 
+              list-style: none
+              padding: 0
+              margin: 0 auto
+              display: flex
+              position: relative
+              height: 100%            
+              li 
+                display: flex
+                width: 25%              
+                min-height: 50px
+                position: relative
+                // opacity: 0   
+                a 
+                  display: flex
+                  position: relative
+                  color: black
+                  text-decoration: none
+                  overflow: hidden
+                  font-family: Comfortaa
+        .header-middle-right
+          .circle_wrapper
+
+            .circle
+              width: 400px
+              height: 400px  
+              border-radius: 50%
+              margin-top: 100px
+              margin-right: 800px  
+              background: url(photo/1.jpg) 
+              position: relative 
+              .circle1
+                width: 50px
+                height: 50px
+                position: absolute
+                margin-left: auto
+                margin-right: auto
+                left: 50%
+                top: 50%
+                transform: translate(-50%, -50%)
+                border-radius: 50%
+                background: url(photo/1.jpg)                
+                animation: cir1 2s infinite
+                opacity: 0
+                @keyframes cir1
+                  from
+                    transform: translateX(0px)
+
+                  to
+                    // transform: translateX(200px)
+                    transform: translateY(200px)
+                    opacity: 1 
+                  
+
+
+
+// .container 
+//   position: absolute
+//   width: 100%
+//   heigh: 100%
+//   text-align: center
+//   top: 40%
+//   left: 0
+//   margin:  0 auto
+//   font-family: Comfortaa , sans-serif
+
+//   p 
+//     font-size: 20px
+  
+
+//   a 
+//     display: inline-block
+//     position: relative
+//     text-align: center
+//     color: red
+//     text-decoration: none
+//     font-size: 20px
+//     overflow: hidden
+//     top: 5px
+    
+//     &:after 
+//       content: ''
+//       position: absolute
+//       background: red
+//       height: 2px
+//       width: 0%
+//       transform: translateX(-50%)
+//       left: 50%
+//       bottom: 0
+//       transition: .35s ease
+    
+//     &:hover:after,
+//     &:focus:after,
+//     &:active:after 
+//       width: 100%
+    
+  
+
+
+// h1 
+//   position: relative
+//   text-align: center
+//   font-family: 'Comfortaa ', serif
+
+
+
+    
+  
+  
+  
+    
+//     // &:nth-of-type(2) 
+//     //   top: 11px
+    
+    
+//     // &:nth-of-type(3) 
+//     //   top: 22px
+    
+  
+
+
+// .overlay 
+//   position: fixed
+//   background: red
+//   top: 0
+//   left: 0
+//   width: 100%
+//   height: 0%
+//   opacity: 0
+//   visibility: hidden
+//   transition: opacity .35s, visibility .35s, height .35s
+//   overflow: hidden
+  
+//   &.open 
+//     opacity: .9
+//     visibility: visible
+//     height: 100%
+    
+//     li 
+//       animation: fadeInRight .5s ease forwards
+//       animation-delay: .35s
+      
+//       &:nth-of-type(2) 
+//         animation-delay: .4s
+      
+//       &:nth-of-type(3) 
+//         animation-delay: .45s
+      
+//       &:nth-of-type(4) 
+//         animation-delay: .50s
+      
+//   nav 
+//     position: relative
+//     height: 70%
+//     top: 50%
+//     transform: translateY(-50%)
+//     font-size: 50px
+//     font-family: 'Comfortaa ', serif
+//     font-weight: 400
+//     text-align: center
+  
+//   ul 
+//     list-style: none
+//     padding: 0
+//     margin: 0 auto
+//     display: inline-block
+//     position: relative
+//     height: 100%
+    
+//     li 
+//       display: block
+//       height: 25%
+//       height: calc(100% / 4)
+//       min-height: 50px
+//       position: relative
+//       opacity: 0
+      
+//       a 
+//         display: block
+//         position: relative
+//         color: blue
+//         text-decoration: none
+//         overflow: hidden
+        
+//         &:hover:after,
+//         &:focus:after,
+//         &:active:after 
+//           width: 100%
+         
+        
+//         &:after 
+//           content: ''
+//           position: absolute
+//           bottom: 0
+//           left: 50%
+//           width: 0%
+//           transform: translateX(-50%)
+//           height: 3px
+//           background: green
+//           transition: .35s
+        
+
+// @keyframes fadeInRight {
+//   0% 
+//     opacity: 0
+//     left: 20%
+  
+//   100% 
+//     opacity: 1
+//     left: 0
+//  

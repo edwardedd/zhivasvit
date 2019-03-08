@@ -1,0 +1,81 @@
+.blog
+	.wrapper_image
+		.img-bg style="background-image:url(#{asset_path('photo/sample-4.jpg')})"	
+			.top-text
+				|Дізнайтесь більше про здоров'я
+			.top-title
+				|Цікаві статті та 
+				br
+				|корисна інформація!
+
+	.wrapper_all_content
+		.wrapper-top
+			.top-title
+				|Статті про здоров'я
+			.line
+				.green-line
+				.green-point
+			.top-describe
+				|Ознайомтесь зі статтями Ігора, дізнайтесь більше про своє здоров'я
+	.wrapper_articles
+		.container
+			.row
+				.col-3
+					.first_block						
+						.top-box
+							.box-header				
+								.				
+								.foto
+									img.img-box style="background-image:url(#{asset_path('photo/igor.jpg')})"	
+								.text
+									|Ігор Шипайло
+							.box-describe
+								|Засновник школи здоров'я.Дипломований спеціаліст,практикуючий натуропат, вчитель йоги, тайцзицюань, кендзюцу.
+						.category-box
+							.dropdown.show
+								a#dropdownMenuLink.btn.btn-secondary.dropdown-toggle[href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"]
+									|  Dropdown link 
+								.dropdown-menu[aria-labelledby="dropdownMenuLink"]
+									a.dropdown-item[href="#"]
+										| Action
+									a.dropdown-item[href="#"]
+										| Another action
+									a.dropdown-item[href="#"]
+										| Something else here
+						.sign-box 
+							/* форма "ПІДПИСАТИСЬ"
+							form.text-center.p-3
+								p.h4.mb-4
+									| Підпишіться!
+								p.sign-describe
+									| Отримуйте нові статті першими. Тільки корисна інформація.																			
+								input#defaultSubscriptionFormEmail.form-control.mb-4[type="email" placeholder="E-mail"]
+								button.btn.btn-info.btn-block[type="submit"]
+									| Підписатись
+						.media-box
+				.col-9
+					.card_place
+						.card
+						  img.card-img-top style="background-image:url(#{asset_path('photo/1.jpg')})"
+							.card-body
+								h5.card-title
+									| Card title
+								p.card-text
+									| Some quick example text to build on the card title and make up the bulk of the card's content.
+
+					.dropdown
+						button.btn.btn-primary.dropdown-toggle[type="button" data-toggle="dropdown"]
+							| Dropdown Example 
+							span.caret
+						ul.dropdown-menu
+							li
+								a[href="#"]
+									| HTML
+							li
+								a[href="#"]
+									| CSS
+							li
+								a[href="#"]
+									| JavaScript
+						
+						

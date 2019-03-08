@@ -94,3 +94,7 @@ gem 'kaminari'
 gem 'thin'
 
 gem 'puma'
+
+gem 'bootstrap', '~> 4.1.3'
+
+gem 'rails_admin', '~> 1.3'

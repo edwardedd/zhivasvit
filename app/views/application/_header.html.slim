@@ -1,1 +1,52 @@
-h2 Header
+.header
+	.header-content
+		.header-logo
+			/ a.logosvg href=
+		.consultation
+			button.btn.btn-outline type="button" консультація	
+					
+		#toggle.button_container			
+			span.top
+			span.middle
+			span.bottom
+			.circle-hamburger
+
+	
+	
+	#overlay.overlay
+		.image-background
+			.img-bg style="background-image:url(#{asset_path('photo/1.jpg')})"
+				.layout1
+					.header-top
+						.header-top-left
+							|ЖИВАСТВІТ	
+						.header-top-right
+					.header-middle
+						.large-8.columns.medium-8
+							.header-middle-left-up 
+								nav.up-menu
+									ul
+										li
+											a href= main_path Головна
+										li
+											a href= about_school_path Про школу
+										li
+											a href= program_path Програма
+										li
+											a href='#' Методики							
+								.down-menu
+									ul
+										li
+											a href='#' Блог
+										li
+											a href='#' Відгуки
+										li
+											a href='#' Контакти
+						.large-4.columns.medium-4
+							.header-middle-right
+								.circle_wrapper
+									.circle
+										.circle1
+		.header-bottom
+			.header-bottom-left
+			.header-bottom-right
