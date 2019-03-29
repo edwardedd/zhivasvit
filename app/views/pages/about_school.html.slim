@@ -21,7 +21,7 @@
 					.col-6					
 						.first-top-image
 							.img-bg style="background-image:url(#{asset_path('photo/prog_2.jpg')})"
-						/ .middle-grey-circle
+						/ .middle-grey-circle 
 					.col-6					
 						.top.about-title
 							|Концепція школи здоров'я
@@ -164,48 +164,50 @@
 				.help_blue_dot
 			.help_describe
 				|Ознайомтесь з нашою програмою та методиками
+			
 		.steps
 			.container
 				.row
-					.col-6
-						div
-							.step_circle
-							.step_1_title
-								span.title_step
-									|Крок 1 : 
-								span.title_step_consultation
-									|Консультація
-							.step_describe
-								|Основне завдання консультації це почути потреби пацієнта та оцінити стан його організму.
-							.register
-								.r_line
-									.blue_dot
-									.blue_line
-								.register_describe
-									|записатись на консультацію
+					.block_steps
+						.col-6
+							div.							
+								.step_1_title
+									span.title_step
+										|Крок 1 : 
+									span.title_step_consultation 
+										|Консультація
+										.step_circle
+								.step_describe
+									|Основне завдання консультації це почути потреби пацієнта та оцінити стан його організму.
+								.register
+									.r_line
+										.blue_dot
+										.blue_line
+									.register_describe
+										|записатись на консультацію
 
-					.col-6
-						div
-							.step_2_circle
-							.step_2_title
-								span.title_step
-									|Крок 2 : 
-								span.title_step_consultation
-									| Складання програми
-							.step_describe
-								|Після консультації, відповідно до потреб пацієнта складається індивідуальна програма лікування, яку пацієнт отримує на другому прийомі.
-							.details
-								.d_line
-									.blue_dot
-									.blue_line
-								.details_describe
-									a href = program_path детальніше про програму
-								 
-				.program_describe
-					.program_circle
-					.program_describe_title
-						|У програмі використовуються такі основні методики:
-				.program_block_1
+						.col-6
+							div							
+								.step_2_title
+									span.title_step
+										|Крок 2 : 
+									span.title_step_program
+										| Складання програми
+								.program_describe
+									|Після консультації, відповідно до потреб пацієнта складається індивідуальна програма лікування, яку пацієнт отримує на другому прийомі.
+								.details
+									.d_line
+										.blue_dot
+										.blue_line
+									.details_describe
+										a href = program_path детальніше про програму
+					 
+				.program_describe	
+					div								
+						.program_describe_title
+							|У програмі використовуються такі основні методики:
+							.program_circle
+				.program_block_1					
 					.block_dietology
 						.block_d_head
 							.block_d_image
@@ -218,7 +220,7 @@
 							.green_dot
 							.green_line
 							.details_describe
-								|детальніше
+								a href = kinezoterapy_path детальніше
 					.block_kinezoterapy
 						.block_k_head
 							.block_k_image
@@ -231,8 +233,8 @@
 							.green_line
 							.details_describe
 								|детальніше
-				.program_block_
-					
+				
+				.program_block_2	
 					.block_manual
 						.block_m_head
 							.block_m_image

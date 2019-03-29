@@ -6,7 +6,7 @@
 		height: 96vh
 		width: 100%
 		// transition: 2s
-		// transform: translateY(-20%)		
+		// transform: translateY(-2 0%)		
 		z-index: 2 
 		.img-bg
 			-webkit-box-shadow: 0px 0px 99px
@@ -422,39 +422,262 @@
 			font-size: 1rem
 			font-family: Comfortaa,bold			
 			padding-left: 5rem 
+		
 	.steps
-		.container
-			.step_circle
-			.step_1_title
-				.title_step
-					font-size: 2rem
-					font-family: Comfortaa,bold
-					font-weight: bold
-					color: $blue 
-				.title_step_consultation
-					font-size: 2rem
-					font-family: Comfortaa,bold
-					font-weight: bold
-			.step_describe
-				font-family: Montserrat,Regular
-				font-size: 1rem 
-			.register
-				display: flex 
-				align-items: center
-				justify-content: flex-end
-				.r_line
+		.container	
+			.block_steps	
+				display: flex 	
+				margin-top: 3rem 
+				margin-bottom: 7rem 
+				margin-left: -2rem 
+				.step_1_title
+					.title_step
+						font-size: 2rem
+						font-family: Comfortaa,bold
+						font-weight: bold
+						color: $blue 
+					.title_step_consultation
+						font-size: 2rem
+						font-family: Comfortaa,bold
+						font-weight: bold
+						.step_circle
+							width: 5rem 
+							height: 5rem
+							border-radius: 50% 
+							background: #F5F5F5 
+							margin-top: -5rem 
+							margin-left: -3rem 
+							
+							
+				.step_describe
+					font-family: Montserrat,Regular
+					font-size: 1rem 
+				.register
 					display: flex 
-					.blue_dot
+					align-items: center
+					justify-content: flex-end
+					.r_line
+						display: flex 
+						.blue_dot
+							height: 1px
+							width: 5px  
+							background: $blue
+							margin-right: 5px
+						.blue_line
+							height: 1px
+							width: 25px  
+							background: $blue
+							margin-right: 10px
+					.register_describe
+						font-size: 0.8rem
+						font-family: Comfortaa,bold
+						color: $blue 	
+
+				.step_2_title
+					.title_step
+						font-size: 2rem
+						font-family: Comfortaa,bold
+						font-weight: bold
+						color: $blue 
+					.title_step_program
+						font-size: 2rem
+						font-family: Comfortaa,bold
+						font-weight: bold
+				.program_describe
+					font-family: Montserrat,Regular
+					font-size: 1rem 
+				.details
+					display: flex 
+					align-items: center
+					justify-content: flex-end
+					.d_line
+						display: flex 
+						.blue_dot
+							height: 1px
+							width: 5px  
+							background: $blue
+							margin-right: 5px
+						.blue_line
+							height: 1px
+							width: 25px  
+							background: $blue
+							margin-right: 10px
+					.details_describe
+						font-size: 0.8rem
+						font-family: Comfortaa,bold
+						color: $blue 				
+			
+		.program_describe					 
+			.program_describe_title
+				font-size: 2rem
+				font-family: Comfortaa,bold
+				font-weight: 900
+				width: 62% 
+				.program_circle
+					width: 9rem 
+					height: 9rem
+					border-radius: 50% 
+					background: #F5F5F5 					
+					border: 10px solid $green
+					border-right: 10px solid white
+					margin-top: -7.6rem
+					margin-left: -3rem  
+		.program_block_1
+			display: flex 
+			margin-top: 5rem
+			.block_dietology
+				.block_d_head
+					.block_d_image
+					.block_d_title	
+						font-size: 1.5rem
+						font-family: Comfortaa,bold		
+						font-weight: 900 		
+				.block_d_describe	
+					font-family: Montserrat,Regular
+					font-size: 0.9rem 
+				.circle_d
+					width: 100% 
+				.details
+					display: flex
+					align-items: center
+					justify-content: flex-end
+					.green_dot
 						height: 1px
 						width: 5px  
-						background: $blue
+						background: $green
 						margin-right: 5px
-					.blue_line
+					.green_line
 						height: 1px
 						width: 25px  
-						background: $blue
+						background: $green
 						margin-right: 10px
-				.register_describe
-					font-size: 0.8rem
-					font-family: Comfortaa,bold
-					color: $blue 			
+					.details_describe
+						font-family: Comfortaa,bold	
+						font-size: 0.8rem
+						a
+							color: $green
+								
+			.block_kinezoterapy
+				padding-left: 3rem
+				.block_k_head
+					.block_k_image
+					.block_k_title
+						font-size: 1.5rem
+						font-family: Comfortaa,bold	
+						font-weight: 900 
+				.block_k_describe
+					font-family: Montserrat,Regular
+					font-size: 0.9rem 
+				.details
+					display: flex
+					align-items: center
+					justify-content: flex-end
+					.green_dot
+						height: 1px
+						width: 5px  
+						background: $green
+						margin-right: 5px
+					.green_line
+						height: 1px
+						width: 25px  
+						background: $green
+						margin-right: 10px
+					.details_describe
+						font-family: Comfortaa,bold	
+						font-size: 0.8rem
+						color: $green
+		.program_block_2	
+			display: flex 
+			margin-top: 5rem
+			.block_manual
+				.block_m_head
+					.block_m_image
+					.block_m_title
+						font-size: 1.5rem
+						font-family: Comfortaa,bold	
+						font-weight: 900 
+				.block_m_describe
+					font-family: Montserrat,Regular
+					font-size: 0.9rem 
+				.details
+					display: flex
+					align-items: center
+					justify-content: flex-end
+					.green_dot
+						height: 1px
+						width: 5px  
+						background: $green
+						margin-right: 5px
+					.green_line
+						height: 1px
+						width: 25px  
+						background: $green
+						margin-right: 10px
+					.details_describe
+						font-family: Comfortaa,bold	
+						font-size: 0.8rem
+						color: $green 
+			.block_psychology
+				padding-left: 3rem
+				.block_p_head
+					.block_p_image
+					.block_p_title
+						font-size: 1.5rem
+						font-family: Comfortaa,bold	
+						font-weight: 900 
+					.circle_p
+				.block_p_describe
+					font-family: Montserrat,Regular
+					font-size: 0.9rem 
+				.details
+					display: flex
+					align-items: center
+					justify-content: flex-end
+					.green_dot
+						height: 1px
+						width: 5px  
+						background: $green
+						margin-right: 5px
+					.green_line
+						height: 1px
+						width: 25px  
+						background: $green
+						margin-right: 10px
+					.details_describe
+						font-family: Comfortaa,bold	
+						font-size: 0.8rem
+						color: $green 
+
+	.bottom-image
+		.img-bottom
+			height: 100vh
+			background-size: cover
+			display: flex			
+			justify-content: center
+			align-items:  center
+			flex-direction:  column
+			
+			.bottom_text_1
+				font-size: 30px  
+				font-family: Comfortaa
+				font-weight: bold   	
+				color: white
+							
+			.bottom_text_2
+				font-size: 30px  
+				font-family: Comfortaa
+				font-weight: bold   	
+				color: #FFA400					
+			.button
+				border: 2px solid $orange
+				border-radius: 25px 25px 25px 25px
+				top: 5%
+				right: 5%  
+				color: $orange 
+				font-size: 20px 
+				font-family: Comfortaa
+				font-weight: bold 
+				padding: 10px 20px 10px 20px
+						
+
+									

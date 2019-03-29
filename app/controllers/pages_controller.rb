@@ -37,5 +37,9 @@ class PagesController < ApplicationController
  def psychoterapy
  end
 
+ def articles
+ end
+
+
  
 end

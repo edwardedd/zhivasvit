@@ -14,6 +14,7 @@ Rails.application.routes.draw do
     get "kinezoterapy", action: "kinezoterapy"
     get "manual",       action: "manual"
     get "psychoterapy", action: "psychoterapy"
+    get "articles",     action: "articles"
     
     
   end
