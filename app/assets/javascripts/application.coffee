@@ -13,7 +13,7 @@
 #= require plugins/lightgallery.min
 #= require plugins/slick.min
 #= require plugins/slick-init
-#= require plugins/jquery.keyframes
+#= require plugins/jquery.keyframes.min
 
 
 #     I N I T I A L I Z E
