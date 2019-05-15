@@ -6,6 +6,20 @@ $('.slider_program').slick({
     cssEase: 'linear',
     draggable: true,
     prevArrow: $('.prev'),
-		nextArrow: $('.next')
+		nextArrow: $('.next'),
+		autoplay:true,
+    mobileFirst:true,
+		responsive: [
+        {
+          breakpoint: 768,
+          settings: {
+            slidesToShow: 2,
+          }
+        },
+        {
+          breakpoint: 540,
+          settings: 'unslick'
+        }
+    ]
 
 });

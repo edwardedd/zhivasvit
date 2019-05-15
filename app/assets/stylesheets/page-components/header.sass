@@ -1,48 +1,13 @@
-// .header-container
-//   position: fixed
-//   padding: 16px 30px
-//   width: 100%
-//   background: transparent
-//   display: -webkit-flex
-//   display: -moz-flex
-//   display: -ms-flex
-//   display: -o-flex
-//   display: flex
-//   justify-content: space-between
-//   +transition-property(transform)
-//   +transition-duration(1s)
-//   +translate(0,-100%)
-//   z-index: 11
-//   &.scrolled, &.visible
-//     +translate(0,0)
-//   
-
-//   //     H a m b u r g e r
-  
-//   .hamburger
-//     margin-left: 4em
-//     .hamburger-box
-//       width: 32px
-//       cursor: pointer
-
-//     .hamburger-inner
-//       width: 100%
-//       border-radius: 0
-//       height: 2px
-//       background: $brown800
-//       &:before, &:after
-//         width: 100%
-//         background: $brown800
-//         height: 2px
-//         border-radius: 0
-	
-
-
 
 .header
   z-index: 3
+
   .header-content
-    // .header-logo      
+    .header-logo
+      margin-top: 2rem
+      .logosvg
+        height: 4rem       
+        width: 13rem 
     .consultation
       position: fixed
       top: 5%
@@ -51,52 +16,95 @@
       font-size: 20px 
       font-family: Comfortaa
       font-weight: bold  
+      margin-right: 2rem
       .btn
-        border: 2px solid $orange
+        border: 4px solid $orange
         border-radius: 20px 20px 20px 20px
-    .button_container         
-      position: fixed
-      top: 5%
-      right: 2%
-      height: 25px
-      width: 25px
-      cursor: pointer
-      z-index: 100
-      transition: opacity .25s ease    
-      
-      &:hover 
-        opacity: .7
-      
-        
-      
-      &.active 
-        .top 
-          transform: translateY(11px) translateX(0) rotate(45deg)
-          background-color: #3C484F      
-        .middle 
-          opacity: 0
-          background-color: #3C484F    
-        .bottom 
-          transform: translateY(-11px) translateX(0) rotate(-45deg)
-          background-color: #3C484F
-
-      span 
-        background-color: green
-        border: none
-        height: 5px
-        width: 100%
-        position: absolute
-        top: 0
-        left: 0
-        transition:  all .35s ease
+    .container_hamburger
+      .button_container         
+        position: fixed
+        top: 5%
+        right: 2%
+        height: 25px
+        width: 25px
         cursor: pointer
+        z-index: 100
+        transition: opacity .25s ease    
         
-        &:nth-of-type(2) 
-          top: 11px
-    
-    
-        &:nth-of-type(3) 
-          top: 22px
+        &:hover 
+          opacity: .7
+        
+          
+        
+        &.active 
+          .top 
+            transform: translateY(11px) translateX(0) rotate(45deg)
+            background-color: #152430 
+            width: 100% 
+            left: 0
+            &:nth-of-type(1) 
+              top: 0px 
+          .middle 
+            opacity: 0
+            background-color: #152430    
+          .bottom 
+            transform: translateY(-11px) translateX(0) rotate(-45deg)
+            background-color: #152430
+            width: 100% 
+            left: 0  
+            &:nth-of-type(1) 
+              top: 27px
+          .circle-hamburger
+            position: fixed
+            top: 5%
+            right: 2%
+            width: 40px
+            height: 40px  
+            border-radius: 50px 
+            border-right: 4px solid $orange
+            border-left: 4px solid $orange
+            border-top: 4px solid $orange
+            border-bottom: 4px solid transparent
+            transform: rotate(135deg)
+
+        span.line_top 
+          background-color: #152430
+          border: none
+          height: 2px
+          width: 50%
+          position: absolute
+          top: 0
+          left: -7px
+          transition:  all .35s ease
+          cursor: pointer
+          &:nth-of-type(1) 
+            top: 12px
+        span.line_middle
+          background-color: #152430
+          border: none
+          height: 2px
+          width: 100%
+          position: absolute
+          top: 0
+          left: -7px
+          transition:  all .35s ease
+          cursor: pointer
+          &:nth-of-type(2) 
+            top: 17px
+      
+        span.line_bottom
+          background-color: #152430
+          border: none
+          height: 2px
+          width: 50%
+          position: absolute
+          top: 0
+          left: 5px
+          transition:  all .35s ease
+          cursor: pointer   
+                      
+          &:nth-of-type(3) 
+            top: 22px
       .circle-hamburger
         position: fixed
         top: 5%
@@ -104,13 +112,14 @@
         width: 40px
         height: 40px  
         border-radius: 50px 
-        border-right: 2px solid $orange
-        border-left: 0px solid $orange
-        border-top: 2px solid $orange
-        border-bottom: 0px solid opacity
+        border-right: 4px solid $orange
+        border-left: 4px solid $orange
+        border-top: 4px solid $orange
+        border-bottom: 4px solid transparent
+        transform: rotate(135deg)
 
   .overlay    
-    background: #F5F5F5
+    background: red
     top: 0
     left: 0
     width: 100%
@@ -119,12 +128,13 @@
     visibility: hidden
     transition: opacity .35s, visibility .35s, height .35s
     overflow: hidden
+    box-shadow: 5px 10px #888888
     .image-background
       .img-bg 
-      height: 70% 
+     
 
     &.open 
-      opacity: .9
+      opacity: 1
       visibility: visible
       height: 100%
       
@@ -145,21 +155,27 @@
       // clip-path: polygon(0% 0%, 0% 100%, 25% 100%, 25% 25%, 75% 25%, 75% 75%, 25% 75%, 25% 100%, 100% 100%, 100% 0%) border-radius: 50%
       position:absolute
       top: 20px
-      right: 20px
+      right: -30px
       bottom: 20px
-      left: 20px
+      left: -30px
       background: white
       height: 100% 
       margin-bottom: 100px 
       height: 70%      
-      border-bottom-left-radius: 700px 250px 
-      border-bottom-right-radius: 700px 250px  
-      
+      border-bottom-left-radius: 80%  
+      border-bottom-right-radius: 80%
+      box-shadow: 5px 10px 20px 6px #F5F5F5
+
+
+
 
       .header-top
         width: 10% 
         
         .header-top-left
+          .logosvg
+            width: 10rem
+            margin-top: 20px 
         .header-top-right
       .header-middle
 
@@ -168,15 +184,11 @@
           margin-left: 50px     
           .up-menu
             position: flex
-            height: 70%
-            top: 50%
-            transform: translateY(-50%)
             font-size: 25px
             font-family: 'Comfortaa ', serif
             font-weight: 700
             text-align: center
-            margin-top: 200px 
-          
+            margin-top: 200px
             ul 
               list-style: none
               padding: 0
@@ -197,23 +209,41 @@
                   text-decoration: none
                   overflow: hidden
                   font-family: Comfortaa
-                  
-                  &:hover:after,
-                  &:focus:after,
-                  &:active:after 
-                    width: 100%
-                   
-                  
-                  &:after 
-                    content: ''
-                    position: absolute
-                    bottom: 0
-                    left: 50%
-                    width: 0%
-                    transform: translateX(-50%)
-                    height: 3px
-                    background: green
-                    transition: .35s
+                  &:hover
+                    color: $orange
+          .dropbtn
+            font-size: 25px
+            font-family: Comfortaa 
+            font-weight: 700
+            text-align: center
+          .dropdown-content
+            font-size: 25px
+            font-family: Comfortaa 
+            font-weight: 700
+            text-align: center
+            display: none
+            position: absolute
+            background-color: transparent
+            min-width: 160px
+            box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2)
+            z-index: 1
+            a
+
+              color: black
+              padding: 12px 16px
+              text-decoration: none
+              display: block
+              &:hover
+                color: $orange
+          .dropdown:hover
+            .dropdown-content
+              display: block
+            .dropbtn
+              color: $orange
+              background-color: white 
+              font-size: 25px
+              font-family: Comfortaa
+              font-weight: 700    
           .down-menu
             position: flex
             font-size: 20px
@@ -240,9 +270,30 @@
                   text-decoration: none
                   overflow: hidden
                   font-family: Comfortaa
+                  &:hover
+                    color: $orange
+          .dropdown-content
+            display: none
+            position: absolute
+            background-color: #f1f1f1
+            min-width: 160px
+            box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2)
+            z-index: 1
+            a
+              color: black
+              padding: 12px 16px
+              text-decoration: none
+              display: block
+              &:hover
+                background-color: #ddd
+          .dropdown:hover
+            .dropdown-content
+              display: block
+            .dropbtn
+              background-color: #3e8e41      
+
         .header-middle-right
           .circle_wrapper
-
             .circle
               width: 400px
               height: 400px  
@@ -272,162 +323,149 @@
                     // transform: translateX(200px)
                     transform: translateY(200px)
                     opacity: 1 
+        .header-bottom
+          display: flex 
+          -webkit-justify-content: center 
+          justify-content: center 
+          margin: auto 
+          margin-top: 2rem
+          .header-bottom-left
+            .first_phone_number
+              .phone_icon
+          .number_text
+            font-family: Comfortaa
+            font-weight: 1rem
+          .number_text_one
+            font-family: Montserrat
+            font-weight: 1rem 
+        .second_phone_number
+          .phone_icon
+          .number_second
+
+      .header-bottom-right
+        margin-left: 2rem
+        .zhyvasvit_mail
+          display: flex 
+          .mail_logo
+            background: url(icons/mail.png) 
+            background-repeat: no-repeat 
+            height: 1rem
+            width: 2rem 
+            margin-top: 4px
+          .mail_name
+            
+        .zhyvasvit_skype
+          display: flex 
+          .skype_logo
+            background: url(icons/skype.png) 
+            background-repeat: no-repeat 
+            height: 1rem
+            width: 2rem 
+            margin-top: 4px
+          .skype_name
+            |zhyvasvit
+        .zhyvasvit_insta
+          display: flex 
+          .insta_logo
+            background: url(icons/insta.png) 
+            background-repeat: no-repeat 
+            height: 1rem
+            width: 2rem 
+            margin-top: 4px
+          .insta_name
+           
+        .zhyvasvit_facebook
+          display: flex 
+          .facebook_logo
+            background: url(icons/fb.png) 
+            background-repeat: no-repeat 
+            height: 1rem
+            width: 2rem
+            margin-top: 4px
+          .facebook_name
                   
 
 
-
-// .container 
-//   position: absolute
-//   width: 100%
-//   heigh: 100%
-//   text-align: center
-//   top: 40%
-//   left: 0
-//   margin:  0 auto
-//   font-family: Comfortaa , sans-serif
-
-//   p 
-//     font-size: 20px
-  
-
-//   a 
-//     display: inline-block
-//     position: relative
-//     text-align: center
-//     color: red
-//     text-decoration: none
-//     font-size: 20px
-//     overflow: hidden
-//     top: 5px
-    
-//     &:after 
-//       content: ''
-//       position: absolute
-//       background: red
-//       height: 2px
-//       width: 0%
-//       transform: translateX(-50%)
-//       left: 50%
-//       bottom: 0
-//       transition: .35s ease
-    
-//     &:hover:after,
-//     &:focus:after,
-//     &:active:after 
-//       width: 100%
-    
-  
+@media (max-width: 1024px)
+  .header
+    .header-content    
+      .row
+        .header_wrapper
+          .consultation
+            
+  .overlay
+    .image-background
+      .img-bg 
+        .layout1 
+          border-radius: 0% 0% 100% 100%/0% 0% 10% 10%
+          // height: 88% 
+          .header-middle
+            .header-middle-left-up
+              // width: 100%
+              // margin-left: 0px  
+              .up-menu
+                display: flex               
+                margin-top: 18rem 
+                ul
+                  display: flex 
+                  li
+                    width: 100% 
+                    margin-right: 3rem 
+                    
 
 
-// h1 
-//   position: relative
-//   text-align: center
-//   font-family: 'Comfortaa ', serif
+              .down-menu
+                // margin-top: -5rem 
+                // display: grid 
+                // font-size: 16px 
+                // ul
+                //   display: grid 
+                //   li
+                //     width: 100%
+              .header-middle-right
+               
+            .circle_wrapper
+              .circle
+                display: none  
+
+@media (max-width: 540px)
+  .header
+    .header-content    
+      .row
+        .header_wrapper
+          .consultation
+            display: none 
+  .overlay
+    .image-background
+      .img-bg 
+        .layout1 
+          border-radius: 0% 0% 100% 100%/0% 0% 10% 10%
+          height: 88% 
+          .header-middle
+            .header-middle-left-up
+              width: 100%
+              margin-left: 0px  
+              .up-menu
+                display: grid 
+                font-size: 16px 
+                margin-top: 7rem 
+                ul
+                  display: grid 
+                  li
+                    width: 100% 
+                    
 
 
-
-    
-  
-  
-  
-    
-//     // &:nth-of-type(2) 
-//     //   top: 11px
-    
-    
-//     // &:nth-of-type(3) 
-//     //   top: 22px
-    
-  
-
-
-// .overlay 
-//   position: fixed
-//   background: red
-//   top: 0
-//   left: 0
-//   width: 100%
-//   height: 0%
-//   opacity: 0
-//   visibility: hidden
-//   transition: opacity .35s, visibility .35s, height .35s
-//   overflow: hidden
-  
-//   &.open 
-//     opacity: .9
-//     visibility: visible
-//     height: 100%
-    
-//     li 
-//       animation: fadeInRight .5s ease forwards
-//       animation-delay: .35s
-      
-//       &:nth-of-type(2) 
-//         animation-delay: .4s
-      
-//       &:nth-of-type(3) 
-//         animation-delay: .45s
-      
-//       &:nth-of-type(4) 
-//         animation-delay: .50s
-      
-//   nav 
-//     position: relative
-//     height: 70%
-//     top: 50%
-//     transform: translateY(-50%)
-//     font-size: 50px
-//     font-family: 'Comfortaa ', serif
-//     font-weight: 400
-//     text-align: center
-  
-//   ul 
-//     list-style: none
-//     padding: 0
-//     margin: 0 auto
-//     display: inline-block
-//     position: relative
-//     height: 100%
-    
-//     li 
-//       display: block
-//       height: 25%
-//       height: calc(100% / 4)
-//       min-height: 50px
-//       position: relative
-//       opacity: 0
-      
-//       a 
-//         display: block
-//         position: relative
-//         color: blue
-//         text-decoration: none
-//         overflow: hidden
-        
-//         &:hover:after,
-//         &:focus:after,
-//         &:active:after 
-//           width: 100%
-         
-        
-//         &:after 
-//           content: ''
-//           position: absolute
-//           bottom: 0
-//           left: 50%
-//           width: 0%
-//           transform: translateX(-50%)
-//           height: 3px
-//           background: green
-//           transition: .35s
-        
-
-// @keyframes fadeInRight {
-//   0% 
-//     opacity: 0
-//     left: 20%
-  
-//   100% 
-//     opacity: 1
-//     left: 0
-//  
+              .down-menu
+                margin-top: -5rem 
+                display: grid 
+                font-size: 16px 
+                ul
+                  display: grid 
+                  li
+                    width: 100%
+              .header-middle-right
+               
+            .circle_wrapper
+              .circle
+                display: none  

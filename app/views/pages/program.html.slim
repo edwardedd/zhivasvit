@@ -1,243 +1,246 @@
 .program
-	.wrapper_image
+	.wrapper_image.parallax__group.base_theme
 		.img-bg style="background-image:url(#{asset_path('photo/sample-4.jpg')})"				
-			.top-text
-				|Програма лікування	
-			.title-top
-				|«Синдрому хронічної втоми»
+			.top-text =@program.main_describe
+				
+			.title-top =@program.main_title
+				
 			.header-low
 				.logo-days
 				.title-days
-					|днів
+					|днів 
 				.logo-stage
 				.title-stage
 					|етапи
 				.arrow
-	.wrapper_all_content
-		.top-wrapper
-			.top-title
-				|Про синдром
-			.line
-				.blue-line
-				.blue-point
-			.top-describe
-				|Дізнайтесь коротку історію синдрому хронічної втоми та його основні симптоми
-		.syndrom
-			.container
-				.row
-					.col-6
-						.top.top-describe
-							|Розвиток нових технологій і пов’язана з цим надмірна кількість інформації, яку потрібно аналізувати, несприятливий психо-емоційний і екологічний фони, поставили людський організм в умови, наближені до екстремальних. Ці фактори є причиною хронічної втоми і як наслідок - виснаження адаптивних і компенсаторних механізмів організму, що веде до функціонального дисбалансу, порушення гомеостазу, захворювань і передчасного старіння.
-						.top.top-title
-							|Історія
-						.top.middle-describe
-							|На хронічну втому з характерними симптомами медики звернули увагу у 1988р. В 1994 р. група дослідників з центру з контролю за хворобами(CDC) сформувала класичне означення – синдром хронічної втоми. Головною проблемою цього означення було те, що воно не призначене для клінічної діагностики. В 2003р. Канадські дослідники сформували критерії для діагностики синдрому хронічної втоми. Ці критерії мали ряд недоліків. Для розв'язання цієї проблеми Інститут медицини США запропонував для позначення цієї патології новий термін «Системне захворювання непереносимості навантажень» і визначив діагностичні критерії.
-						.top.middle-title
-							|Основні клінічні ознаки СХВ:
-					.col-6
-						.first-image
-							.img-bg style="background-image:url(#{asset_path('photo/prog_2.jpg')})"
-				.row
-					.col	
-						.top.bottom-list
-							ol
-								li
-									|постійна втома, яка не проходить після відпочинку
-								li
-									|постійна втома, яка не проходить після відпочинку
-								li
-									|постійна втома, яка не проходить після відпочинку
-								li
-									|постійна втома, яка не проходить після відпочинку
-								li
-									|постійна втома, яка не проходить після відпочинку
-								li
-									|постійна втома, яка не проходить після відпочинку
-								li
-									|постійна втома, яка не проходить після відпочинку
-								li
-									|постійна втома, яка не проходить після відпочинку
-								li
-									|постійна втома, яка не проходить після відпочинку
-								li
-									|постійна втома, яка не проходить після відпочинку
-								li
-									|постійна втома, яка не проходить після відпочинку
-								li
-									|постійна втома, яка не проходить після відпочинку
+	.paralax_wrapper_1.parallax__group.back_theme	
+		.wrapper_all_content
+			.top-wrapper
+				.container-fluid
+					.top-title =@program.first_title
+						
+					.blue-line
+						.line
+						.small-line
+					.top-describe
+						p=@program.first_title_description
+			.syndrom
+				.container
+					.row
+						.col-12.col-md-6.col-xl-6
+							.top.top-describe
+								p=@program.first_description
+							.top.top-title =@program.second_title
+								
+							.top.middle-describe
+								p=@program.second_description
+							.top.middle-title =@program.first_title_list
+								
+						.col-12.col-md-6.col-xl-6
+							.first-image
+								.img-bg style="background-image:url(#{@program.a_p_image})"
+					.row
+						.col-12.col-md-6.col-xl-6
+							.top.bottom-list
+								ol
+									li
+										p=@program.first_line_list
+									li
+										p=@program.second_line_list
+									li
+										p=@program.third_line_list
+									li
+										p=@program.fourth_line_list
+									li
+										p=@program.fifth_line_list
+									li
+										p=@program.six_line_list
+									li
+										p=@program.seventh_line_list
+									li
+										p=@program.eight_line_list
+									li
+										p=@program.nine_line_list
+									li
+										p=@program.ten_line_list
+									li
+										p=@program.eleven_line_list
+									li
+										p=@program.twelve_line_list
+									li
+										p=@program.third_title_right
 
-					.col-5						
-						.text.circle
-							.inside
-								.text.description
-									|Школа здоров’я «Живасвіт» створила концепцію і 
-									br
-										| сформувала свою технологію вирішення цієї проблеми.
-				.row
-					.col-8
-						.top.bottom-tittle
-							|На даний час лікування зазвичай є симптологічне і недостатньо ефективне.
-
-		.about_program
-			.about_program.title
-				|Про програму
-			.line
-				.about_program.orange_line
-				.about_program.orange_dot
-			.about_program.description
-				|Ознайомившись з нашою концепцією, Ви зможете краще зрозуміти суть програми лікування
-		.container
-			.row
-				.col-5
-					.image-mid
-						.img-bg style="background-image:url(#{asset_path('photo/prog_7.jpg')})"
-				.col-7
-					.about_program.first_title
-						|Концепція школи здоров'я
-					.about_program.first_description
-						|Ми обрали новий напрямок медицини – функціональну медицину, принципово новий підхід в основі якого лежить передбачення та попередження захворювань і відновлення балансу систем організму шляхом корекції фізіологічних функцій.
-					.about_program.second_title
-						|Мета
-					.about_program.second_description
-						|Сформувати здоровий спосіб життя. Навчити пацієнтів ефективно використовувати життєвий ресурс і управляти процесом старіння.  
-					.about_program.third_title
-						|Завдання
-					.about_program.third_description
-						|Зліквідувати симптоми, відновити баланс систем організму, відновити функцію, відновити здоров’я. Сформувати для пацієнта програму підтримання здоров’я і навчити нею користувватися.
-
-			.row
-				.col
+						.col-12.col-md-6.col-xl-		
+							.text.circle
+								.inside
+							.text.description
+								|Школа здоров’я «Живасвіт» 
+								br
+									| створила концепцію і сформувала свою технологію вирішення цієї проблеми. 
+					.row
+						.col-12.col-md-8.col-xl-8
+							.top.bottom-tittle
+								p=@program.button_describe
+	.paralax_wrapper_2.parallax__group.base_theme
+		.about_program_wrapper
+			.about_program
+				.about_program.title =@program.about_program_title
 					
-					.program_how_head
-						|Як формується програма:
-			.row
-				.col-6					
-					span.program_how_step
-						|Крок 1 
-					span.program_how_step_first
-						|: Консультація
-					.program_how_description_first
-						|Основне завдання консультації це почути потреби пацієнта та оцінити стан його організму.
-				.col-6
-					span.program_how_second
-						|Крок 2
-					span.program_how_title_second
-						| : Складання програми
-					.program_how_description_second
-						|Після консультації, відповідно до потреб пацієнта складається програма лікування, яку пацієнт отримає на другому прийомі. (Приблизно щось такого плану тут має бути).
-
-		.program_stages
-			.program_stages_wrapper
-				.program_stages.title
-					|Етапи програми
 				.line
-					.program_stages.green_line
-					.program_stages.green_point
-				.program_stages.description
-					|Программа поділяється на 4 основних етапи та індивідуальна для кожного поацієнта
+					.about_program.orange_line
+					.about_program.orange_dot
+				.about_program.description
+					p=@program.a_p_description
 			.container
 				.row
-					.col-7
-						.stage_1
-							span.stage_first_name
-								|Етап 1
-							span.stage_first_title
-								| : Детоксикація
-							.stage_first_list
-								ol
-									li
-										|Активізує функцію видільних систем організму 
-									li
-										|Стимулює обмін речовин 
-									li
-										|Допомагає організму у виділенні продуктів життєдіяльності
-					.col-5
-						.stage_first_image
-							.img-bg style="background-image:url(#{asset_path('photo/prog_4.jpg')})"
-							.white_circle
-				.row
-					.col-6
-						.stage_two
-							.img-bg style="background-image:url(#{asset_path('photo/prog_3.jpg')})"							
-							.circle_white
-					.col-6
-						.stage_2
-							span.stage_two_name
-								|Етап 2 
-							span.stage_two_title
-								| : Корекція метаболізму (обміну речовин)
-							.stage_two_description
-								|Наповнює організм необхідними біохімічними компонентами (вітаміни, мікроелементи, кисень, вода) і відновлює їх баланс.
-				.row
-					.col-7
-						.stage_3
-							span.stage_three_name
-								|Етап 3 :
-							span.stage_three_title
-								| Відновлення пошкоджених функцій організму
-							.stage_third_list
-								ol
-									li
-										|Ліквідування симптомів 
-								ol
-									li
-										| Відновлення функції 
-								ol
-									li
-										|Відновлення здоров'я
-							.stage_three_description
-								|Як правило, на хронічну втому в першу чергу реагують вегетативна нервова система, імунна система, гормональна система, опорно-рухова система, система травлення і засвоєння їжі. В залежності від клінічних проявів для кожного пацієнта підбираються індивідуальні методики відновлення.
-							.stage_three_looking
-								|переглянути методики
-					.col-5
-						.stage_three_img
-							.img-bg style="background-image:url(#{asset_path('photo/prog_5.jpg')})"
-				.row
-					.col-6
-						.stage_4
-							.img-bg style="background-image:url(#{asset_path('photo/prog_1.jpg')})"							
-							.circle_white
-					.col-6
-						.stage_4_name
-							span.stage_name_4
-								|Етап 4 : 
-							span.stage_4_title
-								| Підтримання здоров'я і профілактика хвороб
-							.stage_4_description
-								|Сформує програму здорового способу життя і навчить пацієнта нею користуватись.
+					.col-12.col-md-5.col-xl-5
+						.image-mid
+							.img-bg style="background-image:url(#{asset_path('photo/prog_7.jpg')})"
+					.col-12.col-md-7.col-xl-7
+						.about_program.first_title =@program.a_p_first_title
+							
+						.about_program.first_description
+							p=@program.a_p_first_descrpiton
+						.about_program.second_title =@program.a_p_second_title						
+						.about_program.second_description
+							p=@program.a_p_second_descrpiton 
+						.about_program.third_title =@program.a_p_third_title					
+						.about_program.third_description
+							p=@program.a_p_third_descrpiton
 
-					.slider
-						div
-							.img-bg.slider style="background-image:url(#{asset_path('photo/man_2.jpg')})"
-							.slider_program-title
-								|Емоційний відпочинок довгий заголовок
-							.slider_program-describe
-								|Автор системи “Живасвіт” Дипломований спеціаліст, практикуючий натуропат, вчитель йоги, тайцзицюань, кендзюцу. Автор системи “Живасвіт” Дипломований спеціаліс... 
-						div
-							.img-bg.slider style="background-image:url(#{asset_path('photo/prog_5.jpg')})"
-							.slider_program-title
-								|Емоційний відпочинок довгий заголовок
-							.slider_program-describe
-								|Автор системи “Живасвіт” Дипломований спеціаліст, практикуючий натуропат, вчитель йоги, тайцзицюань, кендзюцу. Автор системи “Живасвіт” Дипломований спеціаліс... 
-						div
-							.img-bg.slider style="background-image:url(#{asset_path('photo/prog_1.jpg')})"
-							.slider_program-title
-								|Емоційний відпочинок довгий заголовок
-							.slider_program-describe
-								|Автор системи “Живасвіт” Дипломований спеціаліст, практикуючий натуропат, вчитель йоги, тайцзицюань, кендзюцу. Автор системи “Живасвіт” Дипломований спеціаліс... зюцу.
-						div
-							.img-bg.slider style="background-image:url(#{asset_path('photo/prog_5.jpg')})"
-							.slider_program-title
-								|Емоційний відпочинок довгий заголовок
-							.slider_program-describe
-								|Автор системи “Живасвіт” Дипломований спеціаліст, практикуючий натуропат, вчитель йоги, тайцзицюань, кендзюцу. Автор системи “Живасвіт” Дипломований спеціаліс... 
-						div
-							.img-bg.slider style="background-image:url(#{asset_path('photo/man_3.jpg')})"
-							.slider_program-title
-								|Емоційний відпочинок довгий заголовок
-							.slider_program-describe
-								|Автор системи “Живасвіт” Дипломований спеціаліст, практикуючий натуропат, вчитель йоги, тайцзицюань, кендзюцу. Автор системи “Живасвіт” Дипломований спеціаліс... 
+				.row
+					.col-12.col-md-10.col-xl-10
+						
+						.program_how_head =@program.a_p_fourth_title
+					
+				.row
+					.col-12.col-md-6.col-xl-6			
+						span.program_how_step =@program.step_one
+							 
+						span.program_how_step_first =@program.step_one_title
+							
+						.program_how_description_first
+							p=@program.step_one_describe
+					.col-12.col-md-6.col-xl-6	
+						span.program_how_second =@program.step_two
+							
+						span.program_how_title_second =@program.step_two_title
+							
+						.program_how_description_second
+							p=@program.step_two_describe
 
+			.program_stages
+				.program_stages_wrapper
+					.program_stages.title =@program.stages_title
+						
+					.line
+						.program_stages.green_line
+						.program_stages.green_point
+					.program_stages.description
+						p=@program.stages_describe
+				.container
+					.row
+						.col-12.col-md-7.col-xl-7
+							.stage_1
+								span.stage_first_name =@program.stage_1
+									
+								span.stage_first_title =@program.stage_1_title
+								
+								.stage_first_list
+									ol
+										li
+											p=@program.stage_1_first_line
+										li
+											p=@program.stage_1_second_line
+										li
+											p=@program.stage_1_third_line
+						.col-12.col-md-5.col-xl-5
+							.stage_first_image
+								.img-bg style="background-image:url(#{asset_path('photo/prog_4.jpg')})"
+								.white_circle
+					.row
+						.col-12.col-md-6.col-xl-6
+							.stage_two
+								.img-bg style="background-image:url(#{asset_path('photo/prog_3.jpg')})"							
+								.circle_white
+						.col-12.col-md-6.col-xl-6
+							.stage_2
+								span.stage_two_name =@program.stage_2
+									 
+								span.stage_two_title =@program.stage_2_title
+									
+								.stage_two_description
+									p=@program.stage_2_describe
+					.row
+						.col-12.col-md-7.col-xl-7
+							.stage_3
+								span.stage_three_name =@program.stage_3
+									
+								span.stage_three_title =@program.stage_3_title
+									
+								.stage_third_list
+									ol
+										li
+											p=@program.stage_3_first_line
+									ol
+										li
+											p=@program.stage_3_second_line
+									ol
+										li
+											p=@program.stage_3_third_line
+								.stage_three_description
+									p=@program.stage_3_describe
+								.stage_three_looking
+									|переглянути методики
+						.col-12.col-md-5.col-xl-5
+							.stage_three_img
+								.img-bg style="background-image:url(#{asset_path('photo/prog_5.jpg')})"
+					.row
+						.col-12.col-md-6.col-xl-6
+							.stage_4
+								.img-bg style="background-image:url(#{asset_path('photo/prog_1.jpg')})"							
+								.circle_white
+						.col-12.col-md-6.col-xl-6
+							.stage_4_name
+								span.stage_name_4 =@program.stage_4
+								 
+								span.stage_4_title =@program.stage_4_title
+									
+								.stage_4_description
+									p=@program.stage_4_describe
+
+						.slider
+							div
+								.img-bg.slider style="background-image:url(#{asset_path('photo/man_2.jpg')})"
+								.slider_program-title
+									|Емоційний відпочинок довгий заголовок
+								.slider_program-describe
+									|Автор системи “Живасвіт” Дипломований спеціаліст, практикуючий натуропат, вчитель йоги, тайцзицюань, кендзюцу. Автор системи “Живасвіт” Дипломований спеціаліс... 
+							div
+								.img-bg.slider style="background-image:url(#{asset_path('photo/prog_5.jpg')})"
+								.slider_program-title
+									|Емоційний відпочинок довгий заголовок
+								.slider_program-describe
+									|Автор системи “Живасвіт” Дипломований спеціаліст, практикуючий натуропат, вчитель йоги, тайцзицюань, кендзюцу. Автор системи “Живасвіт” Дипломований спеціаліс... 
+							div
+								.img-bg.slider style="background-image:url(#{asset_path('photo/prog_1.jpg')})"
+								.slider_program-title
+									|Емоційний відпочинок довгий заголовок
+								.slider_program-describe
+									|Автор системи “Живасвіт” Дипломований спеціаліст, практикуючий натуропат, вчитель йоги, тайцзицюань, кендзюцу. Автор системи “Живасвіт” Дипломований спеціаліс... зюцу.
+							div
+								.img-bg.slider style="background-image:url(#{asset_path('photo/prog_5.jpg')})"
+								.slider_program-title
+									|Емоційний відпочинок довгий заголовок
+								.slider_program-describe
+									|Автор системи “Живасвіт” Дипломований спеціаліст, практикуючий натуропат, вчитель йоги, тайцзицюань, кендзюцу. Автор системи “Живасвіт” Дипломований спеціаліс... 
+							div
+								.img-bg.slider style="background-image:url(#{asset_path('photo/man_3.jpg')})"
+								.slider_program-title
+									|Емоційний відпочинок довгий заголовок
+								.slider_program-describe
+									|Автор системи “Живасвіт” Дипломований спеціаліст, практикуючий натуропат, вчитель йоги, тайцзицюань, кендзюцу. Автор системи “Живасвіт” Дипломований спеціаліс... 
+	.paralax_wrapper_3.parallax__group.back_theme
 		.bottom-image
 			.img-bottom style="background-image:url(#{asset_path('photo/1.jpg')})"
 				.bottom_text_1

@@ -16,5 +16,6 @@ html
     = render "header"
     .main-wrapper
       = yield
+    / script src="//maps.googleapis.com/maps/api/js"
     = render "footer"
     = javascript_include_tag "application", 'data-turbolinks-track' => true

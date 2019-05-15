@@ -1,0 +1,870 @@
+.main 
+	// border-radius: 0% 0% 150% 150%/0% 0% 40% 40%	
+	perspective: 300px
+	height: 100vh
+	overflow-x: hidden
+	overflow-y: auto 
+	
+	.paralax_wrapper_1
+		background: #FEFEFE 
+		border-radius: 0% 0% 150% 150%/0% 0% 40% 40%	
+		height: 180vh 
+		
+		.top_top
+			.wrapper_top
+				.school_title	
+					font-family: Comfortaa,Bold
+					font-weight: 900
+					font-size: 4rem  
+					margin-top: 13rem 	
+				.orange_line
+					background-image: url(#{asset_path('photo/Path.svg')})
+					background-repeat: no-repeat
+					height: 9rem
+					max-width: 58rem  
+					margin-left: -4rem 
+			.list_top
+				margin-left: 10rem 			 
+				.list_top_title
+					font-family: Comfortaa,Bold
+					font-weight: 900
+					font-size: 1.7rem  
+					
+				.list_top_describe
+					font-family: Montserrat
+					font-size: 0.9rem   
+					ol
+						margin-left: 40px 						
+					li:before
+						content: " "
+						position: absolute
+						margin-left: -40px			
+						margin-top: 10px
+						background: $green 
+						color: $green				
+						width: 15px 
+						height: 5px		
+			.top_gray_circle
+				background: #FAFAFA
+				height: 5rem
+				width: 5rem 
+				border-radius: 50%
+			.top_details
+			.top_big_circle
+				 
+				height: 20rem
+				width: 20rem
+				background: #F5F5F5 
+				margin-left: 26rem
+				margin-top: -42rem
+				transform: rotate(130deg)  
+				z-index: 1 
+			.circle_small_left
+				background: #877A6B
+				height: 2rem
+				width: 2rem
+				-webkit-border-radius: 50% 
+				border-radius: 50%    
+			.circle_small_right			
+			.top_wrapper_image
+				width: 800px
+				height: 800px  
+				display: flex 
+				-webkit-align-content: center 
+				align-content: center 
+				-webkit-justify-content: center 
+				justify-content: center 
+				.img-bg				 
+					height: 34rem
+					width: 34rem		
+					border-radius: 50%
+					margin-top: 7rem 
+					border: 40px solid #F5F5F5
+		.top_middle
+			.top_middle_title		
+				.top_orange_circle
+					border-radius: 50%			
+					height: 29rem 
+					width: 29rem 
+					border: 6px solid $orange		
+					border-top: 6px solid white	
+					display: flex 
+					-webkit-align-content: center 
+					align-content: center 
+					-webkit-justify-content: center 
+					justify-content: center 
+					z-index: 2 
+					.img-bg		
+						height: 27rem
+						width: 27rem
+						border-radius: 50%				 
+						background-image: url(#{asset_path('photo/igor.jpg')})
+						background-repeat: round
+						left: 2rem
+						top: 1rem  
+						border: 40px solid #F5F5F5
+				.middle_half_circle
+					width: 30rem
+					height: 30rem
+					border-radius: 50%
+					background: red  
+					z-index: 3 
+			.middle_big_circle
+				height: 40rem
+				width: 40rem  
+				border-radius: 50%
+				background: red 
+				margin-top: -12rem
+				margin-left: -8rem			
+			.middle_top_title
+				// margin-top: -19rem 
+				font-family: Comfortaa,Bold
+				font-weight: 900
+				font-size: 3rem  
+			.middle_top_describe
+				font-family: Montserrat
+				font-size: 0.9rem  
+				margin-bottom: 2rem
+			.middle_middle_text
+				font-family: Comfortaa,Bold
+				font-weight: 900
+				font-size: 1.5rem 			
+			.middle_middle_describe
+				font-family: Montserrat
+				font-size: 0.9rem 
+			.middle_details
+				display: flex
+				align-items: center
+				justify-content: flex-end
+				.green_dot
+					height: 1px
+					width: 5px  
+					background: $green
+					margin-right: 5px
+				.green_point
+					height: 1px
+					width: 25px  
+					background: $green
+					margin-right: 10px
+				.green_details
+					font-family: Comfortaa,bold	
+					font-size: 0.8rem
+					a
+						color: $green
+			.middle_gray_circle
+				height: 10rem
+				width: 10rem
+				border-radius: 50%
+				background: #F5F5F5   
+				margin-top: -5rem
+				margin-left: 30rem  
+			.bottom_top_title
+				font-size: 1.5rem 
+			.bottom_top_name
+				font-family: Comfortaa,Bold
+				font-weight: 900
+				font-size: 2rem 
+				color: $orange 
+			.bottom_top_describe
+				font-family: Montserrat
+				font-size: 0.9rem
+			.wrapper_video
+				display: flex 
+				.video_box
+				.video_describe
+					font-size: 1.5rem
+					
+	.wrapper_paralax_2
+		margin-top: 27rem
+		border-radius: 0% 0% 150% 150%/0% 0% 40% 40%	
+		background-color: #F5F5F5 
+		height: 175vh 
+
+		.middle_directions
+			font-family: Comfortaa,Bold
+			font-weight: 900
+			font-size: 3rem 
+			margin-left: 5rem
+		.middle_directions_line
+			display: flex 
+			.dir_line
+				background: $blue
+				width: 50rem  
+				height: 10px 
+				border-bottom-right-radius: 5px
+				border-top-right-radius: 5px
+				margin-right: 3rem
+			.dir_point
+				background: $blue
+				width: 10px  
+				height: 10px 
+				border-radius: 50%
+		.middle_directions_describe
+			font-size: 1.5rem
+			margin-left: 5rem		
+		.info_white_circle
+			background: white
+			width: 10rem
+			height: 10rem
+			border-radius: 50% 
+			margin-top: 7rem 
+			margin-left: -5rem  
+		.info_info
+			margin-top: -6rem 
+			width: 30rem 
+			.middle_info_title
+				font-family: Comfortaa,Bold
+				font-weight: 900
+				font-size: 1.7rem
+			.middle_info_describe
+				font-family: Montserrat
+				font-size: 0.9rem
+		.info_gray_circle			 
+			height: 27rem
+			width: 27rem							 
+			border-radius: 50% 
+			border: 2px solid white
+			margin-top: -7rem
+			margin-left: 11rem  
+		.middle_info_photo
+			.img-bg
+				position: relative 
+				height: 29rem
+				width: 29rem							 
+				border-radius: 50% 
+				padding: 30px
+				border-width: 10px 						
+				border-style: solid 
+				border-color: $green
+				z-index: 2   
+		.middle_practise_photo
+			.img-bg
+				position: relative 
+				height: 29rem
+				width: 29rem							 
+				border-radius: 50% 
+				padding: 30px
+				border-width: 35px 						
+				border-style: solid 
+				border-color: white
+				margin-top: -1rem
+				margin-left: 3rem
+				z-index: 2   
+		.practise_gray_circle
+			height: 29rem
+			width: 29rem							 
+			border-radius: 50% 
+			// border: 2px solid white
+			margin-top: -7rem
+			margin-left: -3rem
+			position: relative
+			z-index: 3 
+		.practise_practise
+			margin-top: -15rem 
+			width: 30rem 
+			.middle_practise_title
+				font-family: Comfortaa,Bold
+				font-weight: 900
+				font-size: 1.7rem
+			.middle_practise_describe
+				font-family: Montserrat
+				font-size: 0.9rem
+		.practise_white_square
+			height: 10rem
+			width: 21rem
+			// background: white 
+			transform: rotate(130deg)
+			position: relative
+			margin-top: -22rem
+			margin-left: -10rem
+			z-index: 1
+
+		.help_white_circle
+		.help_help
+			margin-top: 11rem 
+			width: 30rem 
+			.middle_help_title
+				font-family: Comfortaa,Bold
+				font-weight: 900
+				font-size: 1.7rem
+			.middle_help_describe
+				font-family: Montserrat
+				font-size: 0.9rem
+		.middle_help_photo
+			.img-bg
+				position: relative 
+				height: 30rem
+				width: 30rem							 
+				border-radius: 50% 
+				padding: 30px
+				border-width: 35px 						
+				border-style: solid 
+				border-color: white
+
+	.feeling_wrapper
+		margin-top: -25rem
+		background: #15232D 
+		border-radius: 0% 0% 150% 150%/0% 0% 40% 40%
+		height: 340vh 
+		.feeling_title
+			font-family: Comfortaa,Bold
+			font-size: 2.5rem
+			color: white  
+			padding-top: 115rem
+		.feeling_line_wrapper
+			display: flex 
+			.feeling_line
+				background: $green
+				width: 40rem  
+				height: 10px 
+				border-bottom-right-radius: 5px
+				border-top-right-radius: 5px
+				margin-right: 3rem
+			.feeling_dot
+				background: $green
+				width: 10px  
+				height: 10px 
+				border-radius: 50%
+		.diagnos_wrapper	
+			height: 20rem 	
+			.first_line_wrapper
+				display: flex 
+				-webkit-justify-content: space-around 
+				justify-content: space-around 
+				margin-top: 5rem 
+				.headach_wrapper
+					.headach_title
+						font-family: Montserrat, Medium
+						color: white
+						font-size: 2rem
+						height: 2.5rem 
+						animation: resize_2 6s infinite
+						animation-delay: 2.8s
+					.headach_line_wrapper
+						display: flex 
+						.headach_line
+							width: 8rem
+							height: 5px
+							background: white   
+							border-bottom-right-radius: 5px
+							border-top-right-radius: 5px
+							border-bottom-left-radius: 5px
+							border-top-left-radius: 5px
+						.headach_dot
+							margin-left: 1rem 
+							width: 1rem
+							height: 5px
+							background: white   
+							border-bottom-right-radius: 5px
+							border-top-right-radius: 5px
+							border-bottom-left-radius: 5px
+							border-top-left-radius: 5px
+			.insomnia_wrapper
+				display: flex 
+				justify-content: flex-end
+				.insomnia_title
+					
+					position: relative 
+					font-family: Montserrat,Regular
+					font-size: 1rem
+					color: #677178
+					&:hover
+						font-size: 1.5rem
+						color: red   
+					// -webkit-animation: infinite
+					// -moz-animation: infinite
+					// -o-animation: infinite
+					animation: resize 6s infinite
+					animation-delay: 2s
+
+							
+
+				.insomnia_circle
+					background: #3D4951
+					height: 8rem
+					width: 8rem
+					border-radius: 50% 
+					margin-left: -3rem
+					margin-top: -2.5rem  
+					animation : resize_1 5s infinite
+					margin-right: 10%
+					
+						  
+			.second_line_wrapper
+				display: flex
+				justify-content: center 
+				height: 2rem 
+				.irritab_wrapper
+					font-family: Montserrat,Regular
+					font-size: 1rem
+					color: #677178 
+					animation: resize 6s infinite
+					animation-delay: 3.5s
+			.third_line_wrapper
+				display: flex 
+				justify-content: space-around 
+				.pain_wrapper
+					font-family: Montserrat,Regular
+					font-size: 1rem
+					color: #677178
+					margin-left: 9rem 
+				.pressure
+					margin-left: 6rem 
+					font-family: Montserrat,Regular
+					font-size: 2rem
+					color: white
+					height: 2.5rem 
+					animation: resize_2 6s infinite
+					animation-delay: 2.5s
+			.fatigue_wrapper 
+				display: flex	
+				margin-left: 10rem 		 
+				.fatigue_title
+					font-family: Montserrat,Regular
+					font-size: 1rem
+					color: #677178
+					position: relative 
+				.fatigue_circle
+					background: #29363F
+					height: 4rem
+					width: 4rem
+					border-radius: 50%
+					margin-left: -2rem
+					margin-top: -1.5rem  
+			.memory_wrapper
+				font-family: Montserrat,Regular
+				font-size: 1rem
+				color: #677178
+				margin: auto
+				text-align: center  
+				animation: resize 8s infinite
+			.fifth_line_wrapper
+				display: flex 
+				justify-content: space-around 
+				.depresion
+					margin-left: 6rem 
+					font-family: Montserrat,Regular
+					font-size: 1.5rem
+					color: white
+					animation: resize_small 12s infinite
+					@keyframes resize_small
+						0%
+							margin-left: 6rem 
+							font-family: Montserrat,Regular
+							font-size: 1.5rem
+							color: white
+						50%
+							margin-left: 6rem
+							font-family: Montserrat,Regular
+							font-size: 1rem
+							color: #677178
+						100%
+							margin-left: 6rem 
+							font-family: Montserrat,Regular
+							font-size: 1.5rem
+							color: white
+				.weight
+					font-family: Montserrat,Regular
+					font-size: 1rem
+					color: #677178
+					animation: resize 10s infinite
+		.chronic_wrapper
+			display: column
+			justify-content: center
+			margin: auto 
+			width: 40rem 
+			.circle_chronic
+				background: #29363F
+				height: 9rem
+				width: 9rem
+				border-radius: 50%
+				margin-left: -6rem 
+			.chronic_title
+				font-family: Comfortaa,Bold
+				font-size: 2rem
+				color: white				
+				font-weight: 500 
+				margin-top: -6rem 
+				margin-left: -2rem 
+				height: 3rem 
+				
+			.chronic_describe_first
+				margin-top: 3rem 
+				font-family: Montserrat,Regular
+				font-size: 0.8rem
+				color: white
+			.chronic_describe_second
+				font-family: Montserrat,Regular
+				font-size: 0.8rem
+				color: white
+		.how_to_work_wrapper
+			font-size: 3rem
+			font-family: Comfortaa
+			font-weight: 700   
+			text-align: center
+			color: #FAFBFB 
+			margin-top: 4rem
+			margin-bottom: 3rem
+		.describe_wrapper
+			.konsultation
+				.konsultation_circle	
+				.flex-wrapper
+					display: flex
+					flex-flow: row nowrap
+
+					.single-chart
+						width: 17%
+						justify-content: space-around
+						text-align: center
+						margin-left: 3rem
+						.circular-chart
+							display: block
+							margin: 10px auto
+							max-width: 80%
+							max-height: 250px
+							margin-left: 6rem
+
+
+							.circle-bg
+								fill: none
+								stroke: #455862
+								stroke-width: 3.8
+
+						.circle
+							fill: #7B888D
+							stroke-width: 2.8
+							stroke-linecap: round
+							
+
+					@keyframes progress
+						0%
+							stroke-dasharray: 0 100
+
+
+					.circular-chart
+						margin-left: 88px
+						&.white .circle
+							stroke: #FFFFFF
+							margin-left: 50px
+							&:hover
+								animation: progress 1s ease-out forwards
+						&.blue .circle
+							stroke: $blue
+							&:hover
+								animation: progress 1s ease-out forwards
+							
+						&.green .circle
+							stroke: $green
+							margin-left: 88px
+							&:hover
+								animation: progress 1s ease-out forwards
+							
+						&.orange .circle
+							stroke: $orange
+							&:hover
+								animation: progress 1s ease-out forwards
+							
+						&.red .circle
+							stroke: #FC4D1C
+							&:hover
+								animation: progress 1s ease-out forwards
+					@keyframes progress
+						0%
+							stroke-dasharray: 0 100		
+
+					.percentage
+						fill: #666
+						font-family: sans-serif
+						font-size: 0.5em
+						text-anchor: middle
+				.circle_title
+					color: #FAFBFB 
+					font-family: Comfortaa
+					font-size: 2rem
+				.circle_description
+					color: #FAFBFB 
+					font-family: Montserrat
+					font-size: 1rem
+		.konsultation_wrapper
+			height: 27rem
+			width: 27rem  
+			background: purple
+			border-radius: 50%
+			margin: auto
+			margin-top: 8rem
+			display: flex 
+			flex-direction: column
+			align-items: center
+			
+			.title_kosultation
+				font-size: 2rem
+				font-family: Comfortaa
+				font-weight: 700 
+				text-align: center
+				margin-top: 5rem
+			.describe_konsultation
+				text-align: center
+				font-family: Montserrat
+				font-size: 1rem 
+				margin-top: 2rem
+				margin-bottom: 2rem
+				width: 200px 
+			.button_kons			
+				border: 2px solid $orange
+				border-radius: 25px 25px 25px 25px
+				top: 5%
+				right: 5%  
+				color: $green 
+				font-size: 15px 
+				font-family: Comfortaa
+				font-weight: bold 
+				padding: 10px 20px 10px 20px		
+	.feedback_wrapper.parallax__group
+		margin-top: 15rem
+		.feedback_title
+			font-family: Comfortaa
+			font-size: 4rem
+			font-weight: 700   
+		.feedback_slider
+			width: 100vw
+			margin-top: 5rem
+			margin-bottom: 5rem
+
+			.slider_wrapper
+				margin-left: 7rem
+				margin-top: 7rem
+				  
+				// &:hover
+				// 	background-color: blue
+				// 	height: 26rem
+				// 	width: 26rem
+				// 	border-radius: 50%   
+
+				.feedback_header
+					display: flex 
+					.img-bg_feedback
+						position: relative 
+						height: 5rem
+						width: 5rem
+						border-radius: 50%
+				.feedback_header_name
+					display: flex				
+					flex-direction: column 
+					.feedback_name
+						font-size: 1rem
+					.feedback_age
+						font-size: 1rem
+					.feedback_proff
+				.feedback_program_title
+					font-family: Comfortaa
+					font-weight: 700
+					font-size: 1.5rem  
+				.feedback_program_describe
+					font-family: Montserrat
+					font-size: 1rem 
+				.circle_hover
+					height: 28rem
+					width: 28rem
+					border-radius: 50%
+					background-color: purple 
+					margin-top: -23rem
+					margin-left: -5rem
+					display: none
+					&:hover
+						display: block  
+
+			 
+
+
+			
+				
+
+
+
+
+.row
+	max-width: 100%
+	margin-right: 0
+	margin-left: 0 
+
+
+
+
+
+	@keyframes resize
+		0%
+			font-family: Montserrat,Regular
+			font-size: 1rem
+			color: #677178
+
+		50%
+			font-family: Montserrat,Regular			
+			color: white
+			font-size: 1.5rem	
+			
+			
+		100%
+			font-family: Montserrat,Regular
+			font-size: 1rem
+			color: #677178 
+			text-shadow: none
+
+
+	@keyframes resize_2
+		0%
+			font-family: Montserrat,Regular
+			font-size: 2rem
+			color: white
+
+		50%
+			font-family: Montserrat,Regular			
+			color: #677178
+			font-size: 1rem	
+			
+			
+		100%
+			font-family: Montserrat,Regular
+			font-size: 2rem
+			color: white
+			text-shadow: none
+			
+
+@media (max-width: 540px)
+	.main
+		.paralax_wrapper_1
+			height: 150rem 
+			border-radius: 0% 0% 100% 100%/0% 0% 10% 10%
+			.top_top
+				.wrapper_top			
+					.school_title
+						font-size: 2rem 
+				.list_top
+					margin-left: 0px 
+					margin-top: 16rem
+				.top_wrapper_image
+					.img-bg
+						height: 20rem
+						width: 20rem  
+						margin-top: -39rem 
+			.top_middle
+				margin-top: -50rem
+				.top_middle_title
+					.top_orange_circle
+						height: 21rem
+						width: 21rem 
+						.img-bg
+							height: 19rem
+							width: 19rem 
+		.wrapper_paralax_2
+			padding-top: 11rem
+			height: 115rem 
+			border-radius: 0% 0% 100% 100%/0% 0% 10% 10%
+			.middle_directions
+				font-size: 2rem
+				margin-left: 1rem 
+			.middle_directions_line
+				.dir_line
+					width: 18rem
+					height: 5px
+					margin-right: 2rem  
+				.dir_point
+					width: 5px
+					height: 5px  
+			.middle_directions_describe
+				margin-left: 1rem
+			.middle_middle
+				.info_white_circle
+					display: none 
+				.info_info
+					margin-top: 22rem
+					width: 22rem 
+					.middle_info_title						
+					.middle_info_describe
+				.info_gray_circle
+					display: none 
+			.middle_info_photo
+				.img-bg
+					height: 20rem
+					width: 20rem
+					margin-top: -29rem
+			.middle_practise_photo
+				.img-bg
+					height: 20rem
+					width: 20rem
+					margin-left: -0.5rem
+			.practise_gray_circle
+				display: none 
+			.practise_practise
+				margin-top: 0
+				width: 22rem 
+			.help_white_circle	
+				display: none 
+			.help_help	
+				margin-top: 30rem
+				margin-left: -10px
+				width: 22rem 
+			.middle_help_photo
+				.img-bg
+					height: 20rem
+					width: 20rem
+					margin-top: 9rem
+					margin-left: -11rem 
+		.feeling_wrapper
+			height: 175rem 
+			border-radius: 0% 0% 100% 100%/0% 0% 10% 10%
+			
+
+	@keyframes resize
+		0%
+			font-family: Montserrat,Regular
+			font-size: 10px
+			color: #677178
+
+		50%
+			font-family: Montserrat,Regular			
+			color: white
+			font-size: 15px	
+			
+			
+		100%
+			font-family: Montserrat,Regular
+			font-size: 10px
+			color: #677178 
+			text-shadow: none
+
+	@keyframes resize_2
+		0%
+			font-family: Montserrat,Regular
+			font-size: 20px
+			color: white
+
+		50%
+			font-family: Montserrat,Regular			
+			color: #677178
+			font-size: 10px	
+			
+			
+		100%
+			font-family: Montserrat,Regular
+			font-size: 20px
+			color: white
+			text-shadow: none
+	@keyframes resize_small
+		0%
+			margin-left: 6rem 
+			font-family: Montserrat,Regular
+			font-size: 15px
+			color: white
+		50%
+			margin-left: 6rem
+			font-family: Montserrat,Regular
+			font-size: 10px
+			color: #677178
+		100%
+			margin-left: 6rem 
+			font-family: Montserrat,Regular
+			font-size: 15px
+			color: white
+			
+
+	

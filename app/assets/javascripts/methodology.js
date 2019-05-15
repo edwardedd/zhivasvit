@@ -7,32 +7,16 @@ function lolol(){
       $('.small-line').css('display','block');  
     }, 3200);
 };
-lolol()
-
-
-var lastScrollTop = 0;
-$(window).scroll(function(event){
-   var st = $(this).scrollTop();
-   if (st > lastScrollTop){
-        $( ".wrapper_image" ).css({
- transform: 'translateY(-30%)'
-});
-       $(".wrapper_all_content").css( { marginTop : "-100px"} );
-
-   } else {
-       $( ".wrapper_image" ).css({
- transform: 'translateY(0%)'
-});
-        $(".wrapper_all_content").css( { marginTop : "80px"} );
-   }
-   lastScrollTop = st;
-});
+lolol();
 
 
 
-// $( window ).load(function() {
-//   $( ".wrapper_image" ).css({
-//  transform: 'translateY(50%)'
+
+
+
+// window.addEventListener('scroll', function() {
+//     const rotate = document.querySelector('circle_1'); 
+//   rotate.css({
+//  transform: 'rotate('+pageYOffset + 'deg)'
 // });
-//   $(".wrapper_all_content").css( { marginTop : "-550px"} );
-// });
+// })

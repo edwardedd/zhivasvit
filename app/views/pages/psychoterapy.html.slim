@@ -1,97 +1,33 @@
-.kinezoterapy
+.psychoterapy
 	.about_image.parallax__group.base_theme
 		.container-fluid
 			.img-bg style="background-image:url(#{asset_path('photo/kinez.jpg')})"	
-				.about-text =@kinezoterapy.main_describe
-					
-				.about-title =@kinezoterapy.main_title				
-	
+				.about-text =@psychoterapy.main_describe					
+				.about-title =@psychoterapy.main_title					
 	.paralax_wrapper_1.parallax__group.back_theme	
 		.container
-			.kinezo_wrapper
+			.psycho_wrapper
 				.row
-					.col-12.col-md-11.col-xl-11
-						.title_top =@kinezoterapy.first_title
-								
+					.col-12.col-md-12.col-xl-12
+						.title_top =@psychoterapy.first_title							
 						.describe_top
-							p=@kinezoterapy.first_description	
+							p=@psychoterapy.first_description
 				.row
-					.col-12.col-md-11.col-xl-11
-						.title_technicks =@kinezoterapy.title_technicks	
-							
-					.col-md-1.col-xl-1
-							.circle_technicks
-				.row
-					.col-12.col-md-6.col-xl-6
-						.title_first
-							span.title_number_first
-								|1.
-							span.title_name_first =@kinezoterapy.first_technick_title	
-								
-						.describe_first
-							p=@kinezoterapy.first_technick_describe
-						.circle_middle
-						.title_middle_first =@kinezoterapy.first_list_title
-					
-						.middle_first_list			
+					.col-12.col-md-12.col-xl-12
+						.middle_title =@psychoterapy.list_title						
+						.middle_list
 							ol
-								li.middle_list
-									p=@kinezoterapy.first_line_first
-								li.middle_list
-									p=@kinezoterapy.first_line_second
-								li.middle_list
-									p=@kinezoterapy.first_line_third
-						.individual_first =@kinezoterapy.first_describe_end
-							
-
-					.col-12.col-md-6.col-xl-6
-						.top_first_image
-							.img-bg style="background-image:url(#{@kinezoterapy.first_image})"
-						.top_first_circle
-				.middle_wrapper
-					.row
-						.col-12.col-md-6.col-xl-6	
-							.middle_image
-								.img-bg style="background-image:url(#{@kinezoterapy.second_image})"
-							.middle_image_circle
-						.col-12.col-md-6.col-xl-6
-							.title_second
-								span.title_number_second
-									|2.
-								span.title_name_second =@kinezoterapy.second_title
-									
-								.describe_second
-									p=@kinezoterapy.second_description
-							.circle_second
-				.row
-					.col-12.col-md-6.col-xl-6
-						.title_third
-							.third_circle
-							span.title_number_third
-								|3. 
-							span.title_name_third =@kinezoterapy.third_title
-								
-							 
-							.describe_third
-								p=@kinezoterapy.third_description
-						.title_middle_third
-							|А саме:
-						.middle_third_list
-							ol
-								li.third_list
-									|збалансовує крово-лімфообіг організму 
-								li.third_list
-									|збільшує енергозатрати організму 
-								li.third_list
-									|корекція функцій внутрішніх органів
-					.col-12.col-md-6.col-xl-6
-						.third_image
-							.img-bg style="background-image:url(#{@kinezoterapy.third_image})"
-						.third_image_circle
-	
+								li.middle_list_describe
+									p=@psychoterapy.first_list_description
+								li.middle_list_describe
+									p=@psychoterapy.second_list_description
+								li.middle_list_describe
+									p=@psychoterapy.third_list_description
+								li.middle_list_describe
+									p=@psychoterapy.fourth_list_description
 		.slider
 			div
-				.img-bg.slider style="background-image:url(#{asset_path('photo/man_2.jpg')})"
+				.img-bg.slider style="background-image:url(#{@kinezoterapy.first_image})"
 				.slider_program-title
 					|Емоційний відпочинок довгий заголовок
 				.slider_program-describe
@@ -129,3 +65,7 @@
 					|безкоштовно!
 				.button
 					button.name-btn type="submit" Запсисатись
+
+
+
+  

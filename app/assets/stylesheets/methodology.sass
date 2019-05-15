@@ -2,138 +2,256 @@
 .methodology 
 	// padding-top: 100px
 	padding-bottom: 50px   
+	perspective: 300px
+	height: 100vh 
+	overflow-x: hidden
+	overflow-y: auto 
 	.wrapper_image
 		position: relative 
 		height: 96vh
 		width: 100%
-		transition: 2s
+		// transition: 2s
 		// transform: translateY(-20%)		
 		z-index: 2 
 		.img-bg
 			-webkit-box-shadow: 0px 0px 99px
 			border-bottom-left-radius: 80%  
 			border-bottom-right-radius: 80%
-		.top-text							
-			font-family: Comfortaa	
-			font-size: 30px 	
-			text-align: center  				
-		.title-top
-			font-family: Comfortaa		
-			font-size: 50px 	
-			text-align: center
-	.wrapper_all_content
-		margin-top: -550px
-		// transition: 2s
-		 
-		.middle				
-			.title-mid	
-				font-size: 50px
-				font-family: Comfortaa  	
-			.blue-line						
-				margin: 0 
-				display: flex
-				transform: translateX(-100%)
-				transition: 3s ease-in-out							
+			display: flex			
+			justify-content: center
+			align-items:  center
+			flex-direction:  column
+			.top-text							
+				font-family: Comfortaa	
+				font-size: 30px 	
+				text-align: center  				
+			.title-top
+				font-family: Comfortaa		
+				font-size: 50px 	
+				text-align: center
+	.paralax_wrapper_1
+		margin-top: 45rem
+		.wrapper_all_content
+			margin-top: -550px
+			// transition: 2s
+			 
+			.middle				
+				.title-mid	
+					font-size: 50px
+					font-family: Comfortaa  	
+				.blue-line						
+					margin: 0 
+					display: flex
+					transform: translateX(-100%)
+					transition: 3s ease-in-out							
+					
+					.line
+						background: $blue
+						width: 1450px  
+						height: 10px 
+						border-bottom-right-radius: 5px
+						border-top-right-radius: 5px
+					.small-line
+						display: none 
+						background: $blue
+						width: 10px  
+						height: 10px 
+						border-radius: 50%
+						margin-left: 20px 
+				.title-describe		
+					font-size: 20px 		
+										 
+				.describe		
+					margin-top: 4rem
+					font-family: Montserrat
+					font-size: 16px  						
+				.title1		
+					font-family: Comfortaa
+					font-size: 18px  
+					font-weight: bold 	
+					margin-top: 2rem					
+				.describe1
+					font-family: Montserrat
+					font-size: 16px  
+				.image-mid
+					z-index: 2 
+					height: 420px
+					width: 420px  
+					border-radius: 50% 		
+					// margin-left: 100px 	
+					padding: 12px
+					border-width: 10px 						
+					border-style: solid
+					border-color: $blue 
+					display: flex			
+					justify-content: center			
+					align-items:  center
+					.middle-image
+						height: 380px
+						width: 380px							 
+						border-radius: 50% 
+			.bottom
+				.describe2
+					font-family: Comfortaa
+					font-weight: bold 
+					font-size: 30px
+					margin-left: 15%   
 				
-				.line
-					background: $blue
-					width: 1450px  
-					height: 10px 
-					border-bottom-right-radius: 5px
-					border-top-right-radius: 5px
-				.small-line
-					display: none 
-					background: $blue
-					width: 10px  
-					height: 10px 
+				.circle1
+					height: 10rem 
+					width: 10rem 
 					border-radius: 50%
-					margin-left: 20px 
-			.title-describe		
-				font-size: 20px 		
-				color: red					 
-			.describe		
-				font-family: Montserrat
-				font-size: 16px  						
-			.title1		
-				font-family: Montserrat
-				font-size: 18px  
-				font-weight: bold 						
-			.describe1
-				font-family: Montserrat
-				font-size: 16px  
-			.image-mid
-				z-index: 2 
+					background: #F5F5F5  
+					margin-top: -7.5rem
+					margin-bottom: 6rem
+					margin-left: 6rem 
+					border: 10px solid $blue 
+					border-right: 10px solid white
+					
+				.title-dieta, .title-kinezoterapia, .title-manual, .title-psyhoterapia
+					font-family: Comfortaa
+					font-weight: bold 
+					font-size: 30px 
+					margin-left: 15%  
 				
-				border-radius: 50% 		
-				// margin-left: 100px 	
-				padding: 12px
-				border-width: 10px 						
-				border-style: solid
-				border-color: $blue 
-				display: flex			
-				justify-content: center			
-				align-items:  center
-				.middle-image
-					height: 380px
-					width: 380px							 
-					border-radius: 50% 
-		.bottom
-			.describe2
-				font-family: Comfortaa
-				font-weight: bold 
-				font-size: 30px
-				margin-left: 15%    
-			.circle1
-				height: 60px 
-				width: 60px 
-				border-radius: 50%
-				color: red 
-			.title-dieta
-				font-family: Comfortaa
-				font-weight: bold 
-				font-size: 30px 
-				margin-left: 15%  
-			.title-kinezoterapia
-				font-family: Comfortaa
-				font-weight: bold
-				font-size: 30px 
-				margin-left: 15%  
-			.dieta
-				font-family: Montserrat
-				font-size: 14px 
-				margin-left: 15%  
-			.kinezoterapia
-				font-family: Montserrat
-				font-size: 14px 
-				margin-left: 15%  
-			.title-manual
-				font-family: Comfortaa
-				font-weight: bold
-				font-size: 30px 
-				margin-left: 15%  
-			.title-psyhoterapia
-				font-family: Comfortaa
-				font-weight: bold
-				font-size: 30px 
-				margin-left: 15%  
-			.manual
-				font-family: Montserrat
-				font-size: 14px 
-				margin-left: 15%  
-			.psyhoterapia
-				font-family: Montserrat
-				font-size: 14px 
-				margin-left: 15%  
-			.details
-				color: green 
-				margin-left: 15%  
+				.dieta, .psyhoterapia, .manual, .kinezoterapia 
+					font-family: Montserrat
+					font-size: 14px 
+					margin-left: 15%  
+				 
+				.details
+					color: green 
+					margin-left: 15%  
 
+	.paralax_wrapper_2				
+		margin-top: 15rem
+		.bottom-image
+			.img-bottom
+				height: 100vh
+				background-size: cover
+				display: flex			
+				justify-content: center
+				align-items:  center
+				flex-direction:  column
+				
+				.bottom_text_1
+					font-size: 30px  
+					font-family: Comfortaa
+					font-weight: bold   	
+					color: white
+								
+				.bottom_text_2
+					font-size: 30px  
+					font-family: Comfortaa
+					font-weight: bold   	
+					color: #FFA400					
+				.button
+					border: 2px solid $orange
+					border-radius: 25px 25px 25px 25px
+					top: 5%
+					right: 5%  
+					color: $orange 
+					font-size: 20px 
+					font-family: Comfortaa
+					font-weight: bold 
+					padding: 10px 20px 10px 20px		
+
+
+
+@media(max-width: 1024px)
+	.methodology 
+		.wrapper_image
+			height: 80% 
+			.img-bg
+				border-radius: 0% 0% 150% 150%/0% 0% 80% 80%
+				.top-text
+					font-size: 20px 		
+				.title-top
+					font-size: 40px
+		.paralax_wrapper_1
+			margin-top: 47rem
+			.wrapper_all_content
+				.middle
+					.title-mid
+						font-size: 30px
+					.blue-line
+						.line, .small-line	
+							height: 5px
+					.describe
+						margin-top: 1rem
+					.image-mid
+						margin-top: 5rem
+						height: 20rem
+						width: 20rem
+						margin-left: -1rem
+						.middle-image
+							height: 18rem
+							width: 18rem 
+				.bottom
+					.describe2
+						font-size: 23px
+						margin-top: 4rem
+					.circle1
+						margin-top: -6rem
+						height: 8rem
+						width: 8rem
+						margin-left: 4rem
+						margin-bottom: 4rem
+					.title-dieta, .title-kinezoterapia, .title-manual, .title-psyhoterapia
+						margin-left: 0	
+					.dieta, .psyhoterapia, .manual, .kinezoterapia
+						margin-left: 0	
+		.paralax_wrapper_2
+			margin-top: 26rem
+@media(max-width: 540px)
+	.methodology 
+		.wrapper_image
+			height: 70% 
+			.img-bg
+				border-radius: 0% 0% 150% 150%/0% 0% 80% 80%
+				.top-text
+					font-size: 16px 		
+				.title-top
+					font-size: 30px
+		.paralax_wrapper_1
+			margin-top: 104rem
+			.wrapper_all_content
+				.middle
+					.title-mid
+						font-size: 30px
+					.blue-line
+						.line, .small-line	
+							height: 5px
+					.describe
+						margin-top: 23rem
+					.image-mid
+						margin-top: -41rem
+						height: 20rem
+						width: 20rem
+						margin-left: -1rem
+						.middle-image
+							height: 18rem
+							width: 18rem 
+				.bottom
+					.describe2
+						font-size: 18px
+						margin-top: 4rem
+					.circle1
+						margin-top: -6.5rem
+						height: 8rem
+						width: 8rem
+						margin-left: 1rem
+						margin-bottom: 4rem
+					.title-dieta, .title-kinezoterapia, .title-manual, .title-psyhoterapia
+						margin-left: 0	
+					.dieta, .psyhoterapia, .manual, .kinezoterapia
+						margin-left: 0	
+		.paralax_wrapper_2
+			margin-top: 61rem
 			.bottom-image
 					.img-bottom
-						height: 500px
-						width: 100% 
-						background-size: 100%
-						-webkit-box-shadow: inset -14px -127px 85px -13px rgba(255,255,255,0.7)
-						-moz-box-shadow: inset -14px -127px 85px -13px rgba(255,255,255,0.7)
-						box-shadow: inset -14px -127px 85px -13px rgba(255,255,255,0.7)
-						
+						.bottom_text_1
+							font-size: 19px
+						.bottom_text_2
+							font-size: 19px
+

@@ -1,6 +1,10 @@
 .about_school
 	padding-bottom: 50px   
 	font-size: 16px 
+	perspective: 300px
+	height: 100vh
+	overflow-x: hidden
+	overflow-y: auto 
 	.about_image
 		position: relative 
 		height: 96vh
@@ -10,8 +14,9 @@
 		z-index: 2 
 		.img-bg
 			-webkit-box-shadow: 0px 0px 99px
-			border-bottom-left-radius: 80%  
-			border-bottom-right-radius: 80%
+			// border-bottom-left-radius: 80%  
+			// border-bottom-right-radius: 80%
+			border-radius: 0% 0% 150% 150%/0% 0% 80% 80%	
 			display: flex			
 			justify-content: center
 			align-items:  center
@@ -21,218 +26,183 @@
 				font-family: Comfortaa
 				font-weight: bold
 				color: white 
+				text-align: center
 			.about-title
-				font-size: 5rem
-				font-family: Comfortaa
-				font-weight: bold  
+				+comfora_5(1)
 				color: white 
-	.wrapper_all_about_content
-		.about-head-title
-			font-size: 5rem
-			font-family: Comfortaa
-			font-weight: bold
-			padding-left: 60px
-		.about-line
-			display: flex 
-			.green-line
-				background: $green
-				width: 50rem  
-				height: 10px 
-				border-bottom-right-radius: 5px
-				border-top-right-radius: 5px
-				margin-right: 3rem
-			.green-dot
-				background: $green
-				width: 10px  
-				height: 10px 
-				border-radius: 50%
-		.about-head-describe
-			padding-top: 20px
-			padding-bottom: 3rem  
-			font-size: 1.5rem 
-			padding-left: 60px
-		.grey-circle
-				width: 10rem 
-				height: 10rem
-				border-radius: 50%
-				background: #F5F5F5
-				margin: auto 
-				position: relative
+	.paralax_wrapper_1
+		margin-top: 32rem
+		.wrapper_all_about_content
+			.about-head-title
+				+comfora_5(1)
+				padding-left: 60px
+			.about-line
+				display: flex 
+				.green-line
+					background: $green
+					width: 50rem  
+					height: 10px 
+					border-bottom-right-radius: 5px
+					border-top-right-radius: 5px
+					margin-right: 3rem
+				.green-dot
+					background: $green
+					width: 10px  
+					height: 10px 
+					border-radius: 50%
+			.about-head-describe
+				padding-top: 20px
+				padding-bottom: 3rem  
+				font-size: 1.5rem 
+				padding-left: 60px
+			.grey-circle
+					width: 10rem 
+					height: 10rem
+					border-radius: 50%
+					background: #F5F5F5
+					margin: auto 
+					position: relative
 
-	.container		
-		.wrapper-top 
-			margin-top: -117px
-			.first-top-image
+		.container		
+			.wrapper-top 
+				margin-top: -117px
+				.first-top-image
+					.img-bg
+						position: relative 
+						height: 450px
+						width: 450px							 
+						border-radius: 50% 
+						padding: 30px
+						border-width: 10px 						
+						border-style: solid 
+						border-color: $green						 
+				.top.about-title, .top.about-title_1, .top.about-title_2
+					padding-top: 20px
+					padding-bottom: 10px  
+					font-family: Comfortaa
+					font-size: 0.9rem  
+					font-weight: bold 
+
+				.top.about-describe, .top.about-describe_1, .top.about-describe_2
+					font-family: Montserrat
+					font-size: 0.8rem
+									
+					
+			.top-middle
+				margin-top: 4rem
+				.top.middle-title
+					font-family: Comfortaa
+					font-size: 1.3rem  
+					font-weight: bold
+
+				.top.middle-list
+					font-size: 14px
+					font-family: Montserrat,Regular
+					ol
+					margin-left: 40px 						
+					li:before
+						content: " "
+						position: absolute
+						margin-left: -40px			
+						margin-top: 10px
+						background: $green 
+						color: $green				
+						width: 15px
+						height: 5px
+					.middle-describe	
+						margin-top: 1.5rem 
+						font-family: Montserrat,Regular
+						font-size: 0.8rem
+			.top.middle-image
+				padding-left: 5rem 
 				.img-bg
 					position: relative 
 					height: 450px
 					width: 450px							 
 					border-radius: 50% 
 					padding: 30px
-					border-width: 10px 						
-					border-style: solid 
-					border-color: $green	
-			// .middle-grey-circle
-			// 	width: 10rem 
-			// 	height: 10rem
-			// 	border-radius: 50%
-			// 	background: #F5F5F5
-			// 	margin: auto 
-			// 	position: relative		 
-			.top.about-title
-				padding-top: 20px
-				padding-bottom: 10px  
-				font-family: Montserrat,Regular
-				font-size: 0.9rem  
-				font-weight: bold 
-
-			.top.about-describe
-				font-family: Montserrat
-				font-size: 0.8rem
-			.top.about-title_1
-				padding-top: 20px
-				padding-bottom: 10px  
-				font-family: Montserrat,Regular
-				font-size: 0.8rem  
-				font-weight: bold
-			.top.about-describe_1
-				font-family: Montserrat
-				font-size: 0.8rem
-			.top.about-title_2
-				padding-top: 20px
-				padding-bottom: 10px  
-				font-family: Montserrat,Regular
-				font-size: 0.8rem  
-				font-weight: bold
-			.top.about-describe_2
-				font-family: Montserrat
-				font-size: 0.8rem
-		.top-middle
-			margin-top: 4rem
-			.top.middle-title
-				font-family: Comfortaa
-				font-size: 1.3rem  
-				font-weight: bold
-
-			.top.middle-list
-				font-size: 14px
-				font-family: Montserrat,Regular
-				ol
-				margin-left: 40px 						
-				li:before
-					content: " "
-					position: absolute
-					margin-left: -40px			
-					margin-top: 10px
-					background: $green 
-					color: $green				
-					width: 15px
-					height: 5px
-				.middle-describe	
-					margin-top: 1.5rem 
-					font-family: Montserrat,Regular
-					font-size: 0.8rem
-		.top.middle-image
-			padding-left: 5rem 
-			.img-bg
-				position: relative 
-				height: 450px
-				width: 450px							 
-				border-radius: 50% 
-				padding: 30px
 					
-	.middle-middle-circle
-		width: 10rem 
-		height: 10rem
-		border-radius: 50%
-		background: #F5F5F5
-		margin: auto 
-		position: relative
-	.middle-middle-title
-		font-size: 2rem
-		font-family: Comfortaa,bold
-		font-weight: bold
-		padding-left: 60px
-		margin-bottom: 3rem
-	.container
-		.row	
-			.block-info
-				display: flex 
-				justify-content: space-around
-				.info				
-					width: 30% 
-					.info_information
-						font-size: 1.5rem
-						font-family: Comfortaa,bold
-						font-weight: bold
-						color: $blue
-					.info_title
-						font-size: 1.5rem
-						font-family: Comfortaa,bold
-						font-weight: bold
-					.info_describe
-						font-family: Montserrat,Regular
-						font-size: 0.8rem
-				.practise
-					width: 30% 
-					.practise_info
-						font-size: 1.5rem
-						font-family: Comfortaa,bold
-						font-weight: bold
-						color: $orange
-					.practise_title
-						font-size: 1.5rem
-						font-family: Comfortaa,bold
-						font-weight: bold
-					.practise_describe
-						font-family: Montserrat,Regular
-						font-size: 0.8rem
-				.rest
-					width: 30% 
-					.rest_info
-						font-size: 1.5rem
-						font-family: Comfortaa,bold
-						font-weight: bold
-						color: $green
-					.rest_title
-						font-size: 1.5rem
-						font-family: Comfortaa,bold
-						font-weight: bold
-					.rest_describe
-						font-family: Montserrat,Regular
-						font-size: 0.8rem 
-	
-	.wrapper_shupailo
-		background: #F3F3F3 
-		.about-head-title
-			font-size: 4rem
+		.middle-middle-circle
+			width: 10rem 
+			height: 10rem
+			border-radius: 50%
+			background: #F5F5F5
+			margin: auto 
+			position: relative
+		.middle-middle-title
+			font-size: 2rem
 			font-family: Comfortaa,bold
 			font-weight: bold
-			padding-left: 3rem
-		.about-line
-			display: flex	
-			.orange-line
-				background: $orange
-				width: 40rem   
-				height: 10px 
-				border-bottom-right-radius: 5px
-				border-top-right-radius: 5px
-				margin-right: 2rem 
-			.orange-dot
-				background: $orange
-				width: 10px  
-				height: 10px 
-				border-radius: 50%
-		.about-head-describe
-			padding-left: 3rem
-			font-size: 1rem
-			font-family: Comfortaa,bold
-	.ihor_shypailo
-		background: #F5F5F5
-		.container
+			padding-left: 60px
+			margin-bottom: 3rem			
+		.block-info
+			display: flex 
+			justify-content: space-around
+			.info				
+				width: 30% 
+				.info_information
+					+comfora_1(1)
+					color: $blue
+				.info_title
+					+comfora_1(1)
+				.info_describe
+					font-family: Montserrat,Regular
+					font-size: 0.8rem
+			.practise
+				width: 30% 
+				.practise_info
+					+comfora_1(1)
+					color: $orange
+				.practise_title
+					+comfora_1(1)
+				.practise_describe
+					font-family: Montserrat,Regular
+					font-size: 0.8rem
+			.rest
+				width: 30% 
+				.rest_info
+					+comfora_1(1)
+					color: $green
+				.rest_title
+					+comfora_1(1)
+				.rest_describe
+					font-family: Montserrat,Regular
+					font-size: 0.8rem 
+	.paralax_wrapper_2
+		margin-top: 42rem
+		.wrapper_shupailo
+			background: #F3F3F3 
+			.about_head_title
+				font-size: 4rem
+				font-family: Comfortaa,bold
+				font-weight: bold
+				padding-left: 3rem
+			.about-line
+				display: flex	
+				.orange-line
+					background: $orange
+					width: 40rem   
+					height: 10px 
+					border-bottom-right-radius: 5px
+					border-top-right-radius: 5px
+					margin-right: 2rem 
+				.orange-dot
+					background: $orange
+					width: 10px  
+					height: 10px 
+					border-radius: 50%
+			.about-head-describe
+				padding-left: 3rem
+				font-size: 1rem
+				font-family: Comfortaa,bold
+		.ihor_shypailo
+			background: #F5F5F5
+			border-bottom-left-radius: 80%
+			border-bottom-right-radius: 80%
+			height: 107vh			
 			.describe-text			 
 				padding-top: 9rem
-				width: 24rem 
+				// width: 24rem 
 				.top-shup-title
 					font-size: 1rem
 					font-family: Comfortaa,bold
@@ -250,434 +220,547 @@
 			.wrapper_igor_way
 				.way_info
 					.way_text
+						+comfora_2(1)
+						position: relative 
+				.wrapper_way_circle
+					
+					
 					.way_circle
-		.way_circle_info
-			.slider
-				.first_circle_info
-					width: 18rem
-					height: 18rem
-					border-radius: 50%
-					background: #FFFFFF
-					display: flex 
-					flex-direction: column
-					justify-content: center
-					align-items: center
-					text-align: center 
-					.first_date
-						font-size: 3rem
-						font-family: Comfortaa,bold
-						font-weight: bold
-						color: $green 
-						padding-bottom: 1rem
+						display: flex 
+						width: 16rem
+						height: 16rem
+						border-radius: 50%
+						border-right: 10px solid transparent
+						background: transparent  
+						border: 10px solid $orange
+						-webkit-justify-content: center 
+						justify-content: center 
+						-webkit-align-items: center 
+						align-items: center 
+						margin-left: -4rem
+						margin-top: -11rem 
+						// animation: spin 1.5s linear infinite
+						@keyframes spin
+							0%
+								-webkit-transform: rotate(0deg)
+								transform: rotate(0deg)
+							100%
+								-webkit-transform: rotate(360deg)
+								transform: rotate(360deg)
+						.way_circle_1
+							width: 12rem
+							height: 12rem
+							border-radius: 50%
+							background: #FFFFFF  
+							 
+					
+						 	
+			.way_circle_info
+				.slider
+					.first_circle_info
+						width: 18rem
+						height: 18rem
+						border-radius: 50%
+						background: #FFFFFF
+						display: flex 
+						flex-direction: column
+						justify-content: center
+						align-items: center
+						text-align: center 
+						.first_date
+							+comfora_3(1)
+							color: $green 
+							padding-bottom: 1rem
 
-					.first_text
+						.first_text
+							font-family: Montserrat,Regular
+							font-size: 1rem 
+					.small_first_circle
+						height: 5rem 
+						width: 5rem
+						border-radius: 50%
+						background: green
+						position: relative
+						margin-top: -60px  
+						margin-left: 200px 
+					.second_circle_info
+						width: 18rem
+						height: 18rem
+						border-radius: 50%
+						background: #FFFFFF 
+						display: flex 
+						flex-direction: column
+						justify-content: center
+						align-items: center
+						text-align: center
+						.second_date
+							+comfora_3(1)				 
+							padding-bottom: 1rem				
+						.second_text
+							font-family: Montserrat,Regular
+							font-size: 1rem
+					.small_second_circle
+						height: 5rem 
+						width: 5rem
+						border-radius: 50%
+						background: $blue
+						position: relative
+						margin-top: -60px  
+						margin-left: 200px 					
+					.third_circle_info
+						width: 18rem
+						height: 18rem
+						border-radius: 50%
+						background: #FFFFFF
+						display: flex 
+						flex-direction: column
+						justify-content: center
+						align-items: center
+						text-align: center 
+						.third_date
+							+comfora_3(1)					
+							padding-bottom: 1rem					
+						.third_text
+							font-family: Montserrat,Regular
+							font-size: 1rem		
+					.small_third_circle
+						height: 5rem 
+						width: 5rem
+						border-radius: 50%
+						background: $orange
+						position: relative
+						margin-top: -60px  
+						margin-left: 200px			
+					.fourth_circle_info
+						width: 18rem
+						height: 18rem
+						border-radius: 50%
+						background: #FFFFFF 
+						display: flex 
+						flex-direction: column
+						justify-content: center
+						align-items: center
+						text-align: center
+						.fourth_date
+							+comfora_3(1)
+							color: #FC4D1C 
+							padding-bottom: 1rem				
+						.fourth_text
+							font-family: Montserrat,Regular
+							font-size: 1rem
+					.small_fourth_circle
+						height: 5rem 
+						width: 5rem
+						border-radius: 50%
+						background: green
+						position: relative
+						margin-top: -60px  
+						margin-left: 200px
+					.fifth_circle_info
+						width: 18rem
+						height: 18rem
+						border-radius: 50%
+						background: #FFFFFF 
+						display: flex 
+						flex-direction: column
+						justify-content: center
+						align-items: center
+						text-align: center
+						.fifth_date
+							+comfora_3(1)
+							color: #FC4D1C 
+							padding-bottom: 1rem				
+						.fifth_text
+							font-family: Montserrat,Regular
+							font-size: 1rem
+					.small_fifth_circle
+						height: 5rem 
+						width: 5rem
+						border-radius: 50%
+						background: green
+						position: relative
+						margin-top: -60px  
+						margin-left: 200px
+	.paralax_wrapper_3
+		margin-top: 50rem					
+		.how_we_help
+			margin-top: 5rem 
+			.help_title	
+				display: flex 
+				// justify-content: space-around
+				.title			
+					+comfora_3(1)
+					padding-left: 5rem 
+				.circle_title
+					width: 7rem 
+					height: 7rem
+					border-radius: 50% 
+					background: #F5F5F5
+					margin-bottom: -4rem
+					margin-left: 36rem 
+			.help_line
+				display: flex 
+				.help_blue_line
+					background: $blue
+					width: 40rem   
+					height: 10px 
+					border-bottom-right-radius: 5px
+					border-top-right-radius: 5px
+					margin-right: 2rem 
+				.help_blue_dot
+					background: $blue
+					width: 10px  
+					height: 10px 
+					border-radius: 50%
+			.help_describe
+				font-size: 1rem
+				font-family: Comfortaa,bold			
+				padding-left: 5rem 
+			
+		.steps
+			.container	
+				.block_steps	
+					display: flex 	
+					margin-top: 3rem 
+					margin-bottom: 7rem 
+					margin-left: -2rem 
+					.step_1_title
+						.title_step
+							+comfora_2(1)
+							color: $blue 
+						.title_step_consultation
+							+comfora_2(1)
+							.step_circle
+								width: 5rem 
+								height: 5rem
+								border-radius: 50% 
+								background: #F5F5F5 
+								margin-top: -5rem 
+								margin-left: -3rem 								
+								
+					.step_describe
 						font-family: Montserrat,Regular
 						font-size: 1rem 
-				.small_first_circle
-					height: 5rem 
-					width: 5rem
-					border-radius: 50%
-					background: green
-					position: relative
-					margin-top: -60px  
-					margin-left: 200px 
-				.second_circle_info
-					width: 18rem
-					height: 18rem
-					border-radius: 50%
-					background: #FFFFFF 
-					display: flex 
-					flex-direction: column
-					justify-content: center
-					align-items: center
-					text-align: center
-					.second_date
-						font-size: 3rem
-						font-family: Comfortaa,bold
-						font-weight: bold					 
-						padding-bottom: 1rem				
-					.second_text
-						font-family: Montserrat,Regular
-						font-size: 1rem
-				.small_second_circle
-					height: 5rem 
-					width: 5rem
-					border-radius: 50%
-					background: $blue
-					position: relative
-					margin-top: -60px  
-					margin-left: 200px 					
-				.third_circle_info
-					width: 18rem
-					height: 18rem
-					border-radius: 50%
-					background: #FFFFFF
-					display: flex 
-					flex-direction: column
-					justify-content: center
-					align-items: center
-					text-align: center 
-					.third_date
-						font-size: 3rem
-						font-family: Comfortaa,bold
-						font-weight: bold					
-						padding-bottom: 1rem					
-					.third_text
-						font-family: Montserrat,Regular
-						font-size: 1rem		
-				.small_third_circle
-					height: 5rem 
-					width: 5rem
-					border-radius: 50%
-					background: $orange
-					position: relative
-					margin-top: -60px  
-					margin-left: 200px			
-				.fourth_circle_info
-					width: 18rem
-					height: 18rem
-					border-radius: 50%
-					background: #FFFFFF 
-					display: flex 
-					flex-direction: column
-					justify-content: center
-					align-items: center
-					text-align: center
-					.fourth_date
-						font-size: 3rem
-						font-family: Comfortaa,bold
-						font-weight: bold
-						color: #FC4D1C 
-						padding-bottom: 1rem				
-					.fourth_text
-						font-family: Montserrat,Regular
-						font-size: 1rem
-				.small_fourth_circle
-					height: 5rem 
-					width: 5rem
-					border-radius: 50%
-					background: green
-					position: relative
-					margin-top: -60px  
-					margin-left: 200px
-				.fifth_circle_info
-					width: 18rem
-					height: 18rem
-					border-radius: 50%
-					background: #FFFFFF 
-					display: flex 
-					flex-direction: column
-					justify-content: center
-					align-items: center
-					text-align: center
-					.fifth_date
-						font-size: 3rem
-						font-family: Comfortaa,bold
-						font-weight: bold
-						color: #FC4D1C 
-						padding-bottom: 1rem				
-					.fifth_text
-						font-family: Montserrat,Regular
-						font-size: 1rem
-				.small_fifth_circle
-					height: 5rem 
-					width: 5rem
-					border-radius: 50%
-					background: green
-					position: relative
-					margin-top: -60px  
-					margin-left: 200px
-	.how_we_help
-		margin-top: 5rem 
-		.help_title	
-			display: flex 
-			// justify-content: space-around
-			.title			
-				font-size: 3rem
-				font-family: Comfortaa,bold
-				font-weight: bold
-				padding-left: 5rem 
-			.circle_title
-				width: 7rem 
-				height: 7rem
-				border-radius: 50% 
-				background: #F5F5F5
-				margin-bottom: -4rem
-				margin-left: 36rem 
-		.help_line
-			display: flex 
-			.help_blue_line
-				background: $blue
-				width: 40rem   
-				height: 10px 
-				border-bottom-right-radius: 5px
-				border-top-right-radius: 5px
-				margin-right: 2rem 
-			.help_blue_dot
-				background: $blue
-				width: 10px  
-				height: 10px 
-				border-radius: 50%
-		.help_describe
-			font-size: 1rem
-			font-family: Comfortaa,bold			
-			padding-left: 5rem 
-		
-	.steps
-		.container	
-			.block_steps	
-				display: flex 	
-				margin-top: 3rem 
-				margin-bottom: 7rem 
-				margin-left: -2rem 
-				.step_1_title
-					.title_step
-						font-size: 2rem
-						font-family: Comfortaa,bold
-						font-weight: bold
-						color: $blue 
-					.title_step_consultation
-						font-size: 2rem
-						font-family: Comfortaa,bold
-						font-weight: bold
-						.step_circle
-							width: 5rem 
-							height: 5rem
-							border-radius: 50% 
-							background: #F5F5F5 
-							margin-top: -5rem 
-							margin-left: -3rem 
-							
-							
-				.step_describe
-					font-family: Montserrat,Regular
-					font-size: 1rem 
-				.register
-					display: flex 
-					align-items: center
-					justify-content: flex-end
-					.r_line
+					.register
 						display: flex 
-						.blue_dot
+						align-items: center
+						justify-content: flex-end
+						.r_line
+							display: flex 
+							.blue_dot
+								height: 1px
+								width: 5px  
+								background: $blue
+								margin-right: 5px
+							.blue_line
+								height: 1px
+								width: 25px  
+								background: $blue
+								margin-right: 10px
+						.register_describe
+							font-size: 0.8rem
+							font-family: Comfortaa,bold
+							color: $blue 	
+
+					.step_2_title
+						.title_step
+							+comfora_2(1)
+							color: $blue 
+						.title_step_program
+							+comfora_2(1)
+					.program_describe
+						font-family: Montserrat,Regular
+						font-size: 1rem 
+					.details
+						display: flex 
+						align-items: center
+						justify-content: flex-end
+						.d_line
+							display: flex 
+							.blue_dot
+								height: 1px
+								width: 5px  
+								background: $blue
+								margin-right: 5px
+							.blue_line
+								height: 1px
+								width: 25px  
+								background: $blue
+								margin-right: 10px
+						.details_describe
+							font-size: 0.8rem
+							font-family: Comfortaa,bold
+							color: $blue 				
+				
+			.program_describe					 
+				.program_describe_title
+					font-size: 2rem
+					font-family: Comfortaa,bold
+					font-weight: 900
+					width: 62% 
+					.program_circle
+						width: 9rem 
+						height: 9rem
+						border-radius: 50% 
+						background: #F5F5F5 					
+						border: 10px solid $green
+						border-right: 10px solid white
+						margin-top: -7.6rem
+						margin-left: -3rem  
+			.program_block_1
+				display: flex 
+				margin-top: 5rem
+				.block_dietology
+					.block_d_head
+						.block_d_image
+						.block_d_title	
+							+comfora_1(1)		
+					.block_d_describe	
+						font-family: Montserrat,Regular
+						font-size: 0.9rem 
+					.circle_d
+						width: 100% 
+					.details
+						display: flex
+						align-items: center
+						justify-content: flex-end
+						.green_dot
 							height: 1px
 							width: 5px  
-							background: $blue
+							background: $green
 							margin-right: 5px
-						.blue_line
+						.green_line
 							height: 1px
 							width: 25px  
-							background: $blue
+							background: $green
 							margin-right: 10px
-					.register_describe
-						font-size: 0.8rem
-						font-family: Comfortaa,bold
-						color: $blue 	
-
-				.step_2_title
-					.title_step
-						font-size: 2rem
-						font-family: Comfortaa,bold
-						font-weight: bold
-						color: $blue 
-					.title_step_program
-						font-size: 2rem
-						font-family: Comfortaa,bold
-						font-weight: bold
-				.program_describe
-					font-family: Montserrat,Regular
-					font-size: 1rem 
-				.details
-					display: flex 
-					align-items: center
-					justify-content: flex-end
-					.d_line
-						display: flex 
-						.blue_dot
-							height: 1px
-							width: 5px  
-							background: $blue
-							margin-right: 5px
-						.blue_line
-							height: 1px
-							width: 25px  
-							background: $blue
-							margin-right: 10px
-					.details_describe
-						font-size: 0.8rem
-						font-family: Comfortaa,bold
-						color: $blue 				
-			
-		.program_describe					 
-			.program_describe_title
-				font-size: 2rem
-				font-family: Comfortaa,bold
-				font-weight: 900
-				width: 62% 
-				.program_circle
-					width: 9rem 
-					height: 9rem
-					border-radius: 50% 
-					background: #F5F5F5 					
-					border: 10px solid $green
-					border-right: 10px solid white
-					margin-top: -7.6rem
-					margin-left: -3rem  
-		.program_block_1
-			display: flex 
-			margin-top: 5rem
-			.block_dietology
-				.block_d_head
-					.block_d_image
-					.block_d_title	
-						font-size: 1.5rem
-						font-family: Comfortaa,bold		
-						font-weight: 900 		
-				.block_d_describe	
-					font-family: Montserrat,Regular
-					font-size: 0.9rem 
-				.circle_d
-					width: 100% 
-				.details
-					display: flex
-					align-items: center
-					justify-content: flex-end
-					.green_dot
-						height: 1px
-						width: 5px  
-						background: $green
-						margin-right: 5px
-					.green_line
-						height: 1px
-						width: 25px  
-						background: $green
-						margin-right: 10px
-					.details_describe
-						font-family: Comfortaa,bold	
-						font-size: 0.8rem
-						a
-							color: $green
-								
-			.block_kinezoterapy
-				padding-left: 3rem
-				.block_k_head
-					.block_k_image
-					.block_k_title
-						font-size: 1.5rem
-						font-family: Comfortaa,bold	
-						font-weight: 900 
-				.block_k_describe
-					font-family: Montserrat,Regular
-					font-size: 0.9rem 
-				.details
-					display: flex
-					align-items: center
-					justify-content: flex-end
-					.green_dot
-						height: 1px
-						width: 5px  
-						background: $green
-						margin-right: 5px
-					.green_line
-						height: 1px
-						width: 25px  
-						background: $green
-						margin-right: 10px
-					.details_describe
-						font-family: Comfortaa,bold	
-						font-size: 0.8rem
-						color: $green
-		.program_block_2	
-			display: flex 
-			margin-top: 5rem
-			.block_manual
-				.block_m_head
-					.block_m_image
-					.block_m_title
-						font-size: 1.5rem
-						font-family: Comfortaa,bold	
-						font-weight: 900 
-				.block_m_describe
-					font-family: Montserrat,Regular
-					font-size: 0.9rem 
-				.details
-					display: flex
-					align-items: center
-					justify-content: flex-end
-					.green_dot
-						height: 1px
-						width: 5px  
-						background: $green
-						margin-right: 5px
-					.green_line
-						height: 1px
-						width: 25px  
-						background: $green
-						margin-right: 10px
-					.details_describe
-						font-family: Comfortaa,bold	
-						font-size: 0.8rem
-						color: $green 
-			.block_psychology
-				padding-left: 3rem
-				.block_p_head
-					.block_p_image
-					.block_p_title
-						font-size: 1.5rem
-						font-family: Comfortaa,bold	
-						font-weight: 900 
-					.circle_p
-				.block_p_describe
-					font-family: Montserrat,Regular
-					font-size: 0.9rem 
-				.details
-					display: flex
-					align-items: center
-					justify-content: flex-end
-					.green_dot
-						height: 1px
-						width: 5px  
-						background: $green
-						margin-right: 5px
-					.green_line
-						height: 1px
-						width: 25px  
-						background: $green
-						margin-right: 10px
-					.details_describe
-						font-family: Comfortaa,bold	
-						font-size: 0.8rem
-						color: $green 
-
-	.bottom-image
-		.img-bottom
-			height: 100vh
-			background-size: cover
-			display: flex			
-			justify-content: center
-			align-items:  center
-			flex-direction:  column
-			
-			.bottom_text_1
-				font-size: 30px  
-				font-family: Comfortaa
-				font-weight: bold   	
-				color: white
-							
-			.bottom_text_2
-				font-size: 30px  
-				font-family: Comfortaa
-				font-weight: bold   	
-				color: #FFA400					
-			.button
-				border: 2px solid $orange
-				border-radius: 25px 25px 25px 25px
-				top: 5%
-				right: 5%  
-				color: $orange 
-				font-size: 20px 
-				font-family: Comfortaa
-				font-weight: bold 
-				padding: 10px 20px 10px 20px
-						
-
+						.details_describe
+							font-family: Comfortaa,bold	
+							font-size: 0.8rem
+							a
+								color: $green
 									
+				.block_kinezoterapy
+					padding-left: 3rem
+					.block_k_head
+						.block_k_image
+						.block_k_title
+							font-size: 1.5rem
+							font-family: Comfortaa,bold	
+							font-weight: 900 
+					.block_k_describe
+						font-family: Montserrat,Regular
+						font-size: 0.9rem 
+					.details
+						display: flex
+						align-items: center
+						justify-content: flex-end
+						.green_dot
+							height: 1px
+							width: 5px  
+							background: $green
+							margin-right: 5px
+						.green_line
+							height: 1px
+							width: 25px  
+							background: $green
+							margin-right: 10px
+						.details_describe
+							font-family: Comfortaa,bold	
+							font-size: 0.8rem
+							color: $green
+			.program_block_2	
+				display: flex 
+				margin-top: 5rem
+				.block_manual
+					.block_m_head
+						.block_m_image
+						.block_m_title
+							+comfora_1(1) 
+					.block_m_describe
+						font-family: Montserrat,Regular
+						font-size: 0.9rem 
+					.details
+						display: flex
+						align-items: center
+						justify-content: flex-end
+						.green_dot
+							height: 1px
+							width: 5px  
+							background: $green
+							margin-right: 5px
+						.green_line
+							height: 1px
+							width: 25px  
+							background: $green
+							margin-right: 10px
+						.details_describe
+							font-family: Comfortaa,bold	
+							font-size: 0.8rem
+							color: $green 
+				.block_psychology
+					padding-left: 3rem
+					.block_p_head
+						.block_p_image
+						.block_p_title
+							+comfora_1(1)
+						.circle_p
+					.block_p_describe
+						font-family: Montserrat,Regular
+						font-size: 0.9rem 
+					.details
+						display: flex
+						align-items: center
+						justify-content: flex-end
+						.green_dot
+							height: 1px
+							width: 5px  
+							background: $green
+							margin-right: 5px
+						.green_line
+							height: 1px
+							width: 25px  
+							background: $green
+							margin-right: 10px
+						.details_describe
+							font-family: Comfortaa,bold	
+							font-size: 0.8rem
+							color: $green 
+
+		.bottom-image
+			.img-bottom
+				height: 100vh
+				background-size: cover
+				display: flex			
+				justify-content: center
+				align-items:  center
+				flex-direction:  column
+				
+				.bottom_text_1
+					font-size: 30px  
+					font-family: Comfortaa
+					font-weight: bold   	
+					color: white
+								
+				.bottom_text_2
+					font-size: 30px  
+					font-family: Comfortaa
+					font-weight: bold   	
+					color: #FFA400					
+				.button
+					border: 2px solid $orange
+					border-radius: 25px 25px 25px 25px
+					top: 5%
+					right: 5%  
+					color: $orange 
+					font-size: 20px 
+					font-family: Comfortaa
+					font-weight: bold 
+					padding: 10px 20px 10px 20px
+						
+.parallax__group 
+	position: relative
+	// height: 100vh
+	transform-style: preserve-3d	
+.parallax__layer 
+	position: absolute
+	top: 0
+	left: 0
+	right: 0
+	bottom: 0						
+.back_theme
+	-webkit-transform: translateZ(-300px) scale(2)
+	transform: translateZ(-300px) scale(2)
+	z-index: 1
+.base_theme
+	-webkit-transform: translateZ(0)
+	transform: translateZ(0)
+	z-index: 4
+
+@mixin comfora_5 
+	font-size: 5rem
+	font-family: Comfortaa
+	font-weight: bold 
+	
+
+
+@media(max-width: 540px)
+	.about_school	
+		.about_image.parallax__group.base_theme	
+			.img-bg
+				border-radius: 0% 0% 80% 80%/0% 0% 20% 20%
+				height: 60vh
+				.about-text
+					font-size: 1rem
+				.about-title
+					font-size: 2rem
+					text-align: center
+		.paralax_wrapper_1
+			margin-top: 50rem
+			.wrapper_all_about_content
+				.about-head-title
+					font-size: 30px 
+				.about-line
+					.green-line
+						width: 16rem
+						height: 5px  
+						margin-right: 1rem 
+					.green-dot
+						width: 5px
+						height: 5px  
+				.about-head-describe
+					font-size: 20px 
+				.grey-circle
+					display: none 
+			.about_about_school
+				height: 158rem 				
+				.wrapper-top
+					.first-top-image
+						.img-bg
+							width: 18rem
+							height: 18rem  
+							margin-top: 5rem
+				.top-middle
+					.top.middle-image							
+						display: none 
+			.middle-middle-circle
+				border: 5px solid $blue
+				border-right-color: transparent
+				margin-left: 1rem
+			.middle-middle-title
+				font-size: 20px 
+				margin-top: -120px
+				position: relative  
+			.block-info
+				display: grid
+				.info, .practise, .rest
+					width: 100% 
+					.info_describe, .practise_describe, .rest_describe
+						font-size: 14px
+						margin-bottom: 2rem
+		.paralax_wrapper_2		
+			.wrapper_shupailo
+				.about_head_title
+					font-size: 30px
+				.about-line
+					.orange-line
+						width: 18rem
+						height: 5px
+					.orange-dot
+						width: 5px
+						height: 5px  
+				.about-head-describe
+			.ihor_shypailo
+				border-radius: 0% 0% 80% 80%/0% 0% 20% 20%
+				height: 105rem 
+				.describe-text
+					margin-top: 11rem
+
+				.first-shup-image
+
+					.img-bg
+						width: 19rem
+						height: 19rem  
+						border: 3px solid $orange
+						margin-top: -30rem
+						

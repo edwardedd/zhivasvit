@@ -1,72 +1,106 @@
 .dietology
-	.wrapper_image
-		.img-bg style="background-image:url(#{asset_path('photo/sample-4.jpg')})"	
-			.top-text
-				|Основні принципи. Техніки.
-			.top-title
-				|Дієтотерапія		
-	.wrapper_all_content
+	.wrapper_image.parallax__group.base_theme
 		.container-fluid
-			.row
-				.col-12	
-					.middle-title
-						|Дієтотерапія
-			.row
-				.col
-					.middle-description
-						|	Процес вивчення впливу харчування на здоров’я організму людини почався ще у ХІХ столітті. Таких вчених, як доктор М. Бірхер-Беннер, Уільям Говард Хей та Макс Герзон, можна вважати основоположниками сучасних дієт. Пізніше до них долучилися такі відомі лікарі як Г. Шелтон, Н. Горен і П. Брег.
-						p
-						| Ці відомі особистості започаткували новий напрямок в медицині – натуральна гігієна, основними положеннями якого були роздільне харчування, лікувальний голод і споживання натуральних продуктів харчування. Не менш ефективні принципи у сфері харчування і лікувального зокрема були запропоновані на сході. Такі системи, як Макробіотика і Аюрведа значно розширили уяву про процес харчування надавши йому ще й філософсько-духовного значення. В основі всіх цих систем в основному лежав практичний досвід обумовлений рівнем знань можливим на той час. Сучасна дієтологія це наукова дисципліна, яка завдяки технічному прогресу має змогу вивчати біохімічний склад продуктів харчування і механізм їх дії на людський організм. Це дозволяє підійти до процесу харчування більш ефективно, зокрема індивідуально підбирати дієти в залежності від потреб організму.
-			.row
-				.col-12
-					.first_list_name
-						|В основі створення дієт лежать наступні принципи:						
-			.row
-				.col-12
-					.first_list
-						ol
-							li
-						    | збалансована по вмісту біохімічних речовин
-							li
-						    | збалансована по калорійнсоті
-							li
-								| адаптована по типу конституції організму і особливостей системи травлення і засвоєння їжі
-							li
-								|адарптована до біоритмів
-							li
-								|адаптована до клімату (пори року)
-							li
-								|адаптована до національних і релігійних традицій
-			.row
-				.col-12			
-					.second_list_name
-						|В залежності від завдань програми дієти поділяються:			
-			.row
-				.col-12		
-					.second_list
-						ol
-							li
-						    | аліманаційна(очисна)
-							li
-						    | наповнююча організм необхідними біохімічними компонентами
-							li
-								| відновлююча порушену функцію організму
-							li
-								| підтримуюча баланс метаболізму
-			.row
-				.col-12
-					.circle_1
-						.inside
-					.row
-						.col-8
-							.text_inside
-								|Дієта буде підібрана відповідно до Ваших потреб у процесі складання програми лікування.
+			.img-bg style="background-image:url(#{asset_path('photo/sample-4.jpg')})"	
+				.top-text =@dietology.main_describe
+					
+				.top-title =@dietology.main_title
+					
+	.paralax_wrapper_1.parallax__group.back_theme	
+		.wrapper_all_content
+			.container-fluid
+				.row
+					.col-12.col-md-12.col-xl-12
+						.middle-title =@dietology.first_title 
+							
+				.row
+					.col
+						.middle-description
+							p=@dietology.first_description
+							p=@dietology.second_description
+							
+				.row
+					.col-12.col-md-12.col-xl-12
+						.first_list_name =@dietology.first_title_list
+													
+				.row
+					.col-12.col-md-12.col-xl-12
+						.first_list
+							ol
+								li
+							    p=@dietology.first_line_description_first
+								li
+							    p=@dietology.second_line_description_first
+								li
+									p=@dietology.third_line_description_first
+								li
+									p=@dietology.fourth_line_description_first
+								li
+									p=@dietology.fifth_line_description_first
+								li
+									p=@dietology.six_line_description_first
+				.row
+					.col-12.col-md-12.col-xl-12		
+						.second_list_name =@dietology.second_title_list
+							
+				.row
+					.col-12.col-md-12.col-xl-12		
+						.second_list
+							ol
+								li
+							    p=@dietology.first_line_description_second
+								li
+							    p=@dietology.second_line_description_second
+								li
+									p=@dietology.third_line_description_second
+								li
+									p=@dietology.fourth_line_description_second
+				.row
+					.col-12.col-md-12.col-xl-12
+						.circle_1
+							.inside
+						.row
+							.col-12.col-md-8.col-xl-8
+								.text_inside =@dietology.bottom_title
+									
 
-			.bottom-image
-				.img-bottom style="background-image:url(#{asset_path('photo/1.jpg')})"
-					.bottom_text_1
-						|Запрошуємо на консультацію
-					.bottom_text_2
-						|безкоштовно!
-					.button
-						button.name-btn type="submit" Запсисатись
+			.slider
+				div
+					.img-bg.slider style="background-image:url(#{asset_path('photo/man_2.jpg')})"
+					.slider_program-title
+						|Емоційний відпочинок довгий заголовок
+					.slider_program-describe
+						|Автор системи “Живасвіт” Дипломований спеціаліст, практикуючий натуропат, вчитель йоги, тайцзицюань, кендзюцу. Автор системи “Живасвіт” Дипломований спеціаліс... 
+				div
+					.img-bg.slider style="background-image:url(#{asset_path('photo/prog_5.jpg')})"
+					.slider_program-title
+						|Емоційний відпочинок довгий заголовок
+					.slider_program-describe
+						|Автор системи “Живасвіт” Дипломований спеціаліст, практикуючий натуропат, вчитель йоги, тайцзицюань, кендзюцу. Автор системи “Живасвіт” Дипломований спеціаліс... 
+				div
+					.img-bg.slider style="background-image:url(#{asset_path('photo/prog_1.jpg')})"
+					.slider_program-title
+						|Емоційний відпочинок довгий заголовок
+					.slider_program-describe
+						|Автор системи “Живасвіт” Дипломований спеціаліст, практикуючий натуропат, вчитель йоги, тайцзицюань, кендзюцу. Автор системи “Живасвіт” Дипломований спеціаліс... зюцу.
+				div
+					.img-bg.slider style="background-image:url(#{asset_path('photo/prog_5.jpg')})"
+					.slider_program-title
+						|Емоційний відпочинок довгий заголовок
+					.slider_program-describe
+						|Автор системи “Живасвіт” Дипломований спеціаліст, практикуючий натуропат, вчитель йоги, тайцзицюань, кендзюцу. Автор системи “Живасвіт” Дипломований спеціаліс... 
+				div
+					.img-bg.slider style="background-image:url(#{asset_path('photo/man_3.jpg')})"
+					.slider_program-title
+						|Емоційний відпочинок довгий заголовок
+					.slider_program-describe
+						|Автор системи “Живасвіт” Дипломований спеціаліст, практикуючий натуропат, вчитель йоги, тайцзицюань, кендзюцу. Автор системи “Живасвіт” Дипломований спеціаліс... 
+	.paralax_wrapper_2.parallax__group.base_theme	
+		.bottom-image
+			.img-bottom style="background-image:url(#{asset_path('photo/1.jpg')})"
+				.bottom_text_1
+					|Запрошуємо на консультацію
+				.bottom_text_2
+					|безкоштовно!
+				.button
+					button.name-btn type="submit" Запсисатись

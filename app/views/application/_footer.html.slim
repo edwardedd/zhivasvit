@@ -1,62 +1,69 @@
 .footer
   .upper-footer.columns
-    .large-2.columns.medium-2
-      .logo
-        .logosvg href=root_path = inline_svg "images/svg/Group 286.svg"
-    .row
-      .col-7
-        .menu_footer_wrapper
-          .about_shool
-            a.title
-            p Про школу     
-          .program
-            a.title
-            p  Програма      
-          .method
-            a.title  
-            p Методика      
-          .blog
-            a.title  
-            p Блог      
-          .reviews
-            a.title  
-            p Відгуки      
-          .contacts
-            a.title  
-            p Контакти
-      .col-3
-        .phone_numbers         
-          .phone1
-            .phone-logo
-              .svg-phone = inline_svg "svg/phone-call.svg"
-            .phone-title 096 820 9059        
-          .phone2          
-            .phone-logo
-              .svg-phone = inline_svg "svg/phone-call.svg"
-            .phone-title 096 820 9059
-
-
-      .col-2
-        .contact-info  
-          .email
-            .email-logo
-              .svg-email = inline_svg "svg/mail.svg"
-            .email-title zhyvasvit@gmail.com        
-          .skype
-            .skype-logo
-              .svg-skype = inline_svg "svg/skype-logo.svg"
-            .skype-title zhyvasvit
+    .container-fluid  
+    
+      .row
+        .col-6.col-md-8.col-lg-8
+          .left_side
+            .logo
+              .logosvg href=root_path = inline_svg "svg/zhiva_logo.svg"
+            .fotter_menu_wrapper
+              .menu_first_wrapper
+                .about_shool
+                  a.title
+                  p Про школу     
+                .program
+                  a.title
+                  p  Програма      
+                .method
+                  a.title  
+                  p Методика 
+              .menu_second_wrapper     
+                .blog
+                  a.title  
+                  p Блог      
+                .reviews
+                  a.title  
+                  p Відгуки      
+                .contacts
+                  a.title  
+                  p Контакти
+        .col-6.col-md-4.col-lg-4
+          .rigt_side
+            .phone_numbers         
+              .phone1
+                .phone-logo
+                  .svg-phone = inline_svg "svg/phone-call.svg"
+                .phone-title 
+                  |096 820 9059        
+              .phone2          
+                .phone-logo
+                  .svg-phone = inline_svg "svg/phone-call.svg"
+                .phone-title 
+                  |096 820 9059
+         
+            .contact-info  
+              .email
+                .email-logo
+                  .svg-email = inline_svg "svg/mail.svg"
+                .email-title zhyvasvit@gmail.com        
+              .skype
+                .skype-logo
+                  .svg-skype = inline_svg "svg/skype-logo.svg"
+                .skype-title zhyvasvit
 
 
   .lower-footer.row
-    .col-sm-6
-      .Private-Enterprise
-        p © 2018 "Живасвіт"
-    .col-sm-6
-      .Handcrafted
-        .Handcrafted-logo
-          .Handcrafted-svg = inline_svg "svg/V_logo.svg"
-        .Handcrafted-text
-          p Розроблено в студії Миколи Вороніна в 2018 р.
+    .container-fluid
+      .row
+        .col-12.col-md-6.col-lg-6
+          .Private-Enterprise
+            p © 2018 "Живасвіт"
+        .col-12.col-md-6.col-lg-6
+          .Handcrafted
+            .Handcrafted-logo
+              .Handcrafted-svg = inline_svg "svg/V_logo.svg"
+            .Handcrafted-text
+              p Розроблено в студії Миколи Вороніна в 2018 р.
 
 

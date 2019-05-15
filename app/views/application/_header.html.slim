@@ -1,52 +1,93 @@
 .header
 	.header-content
-		.header-logo
-			/ a.logosvg href=
-		.consultation
-			button.btn.btn-outline type="button" консультація	
-					
-		#toggle.button_container			
-			span.top
-			span.middle
-			span.bottom
-			.circle-hamburger
+		.container-fluid
+			.row
+				.header_wrapper
+					.header-logo
+						 .logosvg href=root_path = inline_svg "svg/zhiva_logo.svg"
+					.consultation
+						button.btn.btn-outline type="button" консультація	
+					.container_hamburger			
+						#toggle.button_container			
+							span.line_top.top
+							span.line_middle.middle
+							span.line_bottom.bottom
+						.circle-hamburger
 
 	
 	
 	#overlay.overlay
-		.image-background
-			.img-bg style="background-image:url(#{asset_path('photo/1.jpg')})"
-				.layout1
-					.header-top
-						.header-top-left
-							|ЖИВАСТВІТ	
-						.header-top-right
-					.header-middle
-						.large-8.columns.medium-8
-							.header-middle-left-up 
-								nav.up-menu
-									ul
-										li
-											a href= main_path Головна
-										li
-											a href= about_school_path Про школу
-										li
-											a href= program_path Програма
-										li
-											a href='#' Методики							
-								.down-menu
-									ul
-										li
-											a href='#' Блог
-										li
-											a href='#' Відгуки
-										li
-											a href='#' Контакти
-						.large-4.columns.medium-4
-							.header-middle-right
-								.circle_wrapper
-									.circle
-										.circle1
-		.header-bottom
-			.header-bottom-left
-			.header-bottom-right
+		.container-fluid
+			.image-background
+				.img-bg 
+					.layout1
+						.header-top
+							.header-top-left
+								.logosvg href=root_path = inline_svg "svg/zhiva_logo.svg"
+							.header-top-right
+						.header-middle
+							
+							.row
+								.col-12.col-md-12.col-lg-8
+									.header-middle-left-up 
+										nav.up-menu
+											ul
+												li
+													a href= root_path Головна
+												li
+													a href= about_school_path Про школу
+												li
+													a href= program_path Програма	
+												.dropdown
+													span.button.dropbtn
+														| Методики&#9663
+													
+													.dropdown-content
+														a[href="methodology"]
+															| Link 1
+														a[href="methodology"]
+															| Link 2
+														a[href="methodology"]
+															| Link 3
+										.down-menu
+											ul
+												li
+													a href='#' Блог
+												li
+													a href='#' Відгуки
+												li
+													a href='#' Контакти	
+															
+								.col-lg-4
+									.header-middle-right
+										.circle_wrapper
+											.circle
+										/ .circle1
+							.row
+								.header-bottom
+									.header-bottom-left
+										.first_phone_number
+											.phone_icon
+											.number_first.number_text
+												|096 820 9059
+										.second_phone_number
+											.phone_icon
+											.number_second.number_text
+												|097 464 3399
+									.header-bottom-right
+										.zhyvasvit_mail
+											.mail_logo
+											.mail_name.number_text_one
+												|zhyvasvit@gmail.com
+										.zhyvasvit_skype
+											.skype_logo
+											.skype_name.number_text_one
+												|zhyvasvit
+										.zhyvasvit_insta
+											.insta_logo
+											.insta_name.number_text_one
+												|zhyvasvitghfhsh
+										.zhyvasvit_facebook
+											.facebook_logo
+											.facebook_name.number_text_one
+												|zhyvasvithfkshl

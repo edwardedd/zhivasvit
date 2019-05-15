@@ -1,86 +1,101 @@
 .footer
   background-color: $whitefooter
+  
   .upper-footer
     @media screen and (max-width: 100%)
       // display: none
-    .logo
-      padding: 20px 0 0 20px
-      .logosvg
-        svg
-    .menu_footer_wrapper
-      display: flex   
-    .about_shool, .program, .method, .blog, .reviews, .contacts
-      font-family: Comfortaa 
-      font-size: 16px
-      font-weight: bold
-      margin: 1%
-      position: relative 
-      cursor: pointer
-      &:before
-        content: ""
-        position: absolute
-        width: 100%
-        height: 2px
-        bottom: 0px
-        // left: 25px
-        // left: 0
-        // width: 70%
-        background-color: red
-        visibility: hidden
-        -webkit-transform: scaleX(0)
-        transform: scaleX(0)
-        -webkit-transition: all 0.3s ease-in-out 0s
-        transition: all 0.3s ease-in-out 0s
-      &:hover
-        color: red
-        &:before
-          visibility: visible
-          -webkit-transform: scaleX(1)
-          transform: scaleX(1)
-    +breakpoint(small only)
-      padding: 0
-     
+    .left_side
+      display: flex 
+      align-items: baseline
+      .logo
+        margin-top: 1rem 
+        .logosvg
+          height: 4rem 
+          width: 12vw 
+      .fotter_menu_wrapper 
+        display: flex    
+        .menu_first_wrapper, .menu_second_wrapper
+          display: flex
+          // justify-content: space-between    
+          font-family: Comfortaa,Bold
+          .about_shool, .program, .method, .blog, .reviews, .contacts
+            font-family: Comfortaa,Bold 
+            font-size: 1rem
+            font-weight: 500
+            height: 8rem 
+            // margin: 1%
+            position: relative 
+            cursor: pointer
+            margin-left: 2rem
+            // width: 10vw
+            &:before
+              content: ""
+              position: absolute
+              // width: 100%
+              height: 2px
+              bottom: 0px
+              // left: 25px
+              // left: 0
+              // width: 70%
+              background-color: red
+              visibility: hidden
+              -webkit-transform: scaleX(0)
+              transform: scaleX(0)
+              -webkit-transition: all 0.3s ease-in-out 0s
+              transition: all 0.3s ease-in-out 0s
+            &:hover
+              color: red
+              &:before
+                visibility: visible
+                -webkit-transform: scaleX(1)
+                transform: scaleX(1)
+          +breakpoint(small only)
+            padding: 0
+          .about_shool
+            width: 11vw
+            font-family: Comfortaa,Bold  
+    .rigt_side
+      display: flex 
+      .phone_numbers      
+        .phone1, .phone2
+          display: flex 
+          margin: 1px
+          .phone-logo 
+            padding: 5px 
+            .svg-phone 
+              svg
+                height: 15px 
+          .phone-title
+            font-family: Montserrat
+            font-size: 20px 
+            font-weight: semibold 
+            padding: 5px 
+      
+      .contact-info  
+        .email
+          display: flex        
+          .email-logo
+            padding: 7px          
+            .svg-email 
+              svg
+                height: 15px 
+          .email-title      
+            font-size: 14px 
+            padding: 7px
 
-    .phone_numbers      
-      .phone1, .phone2
-        display: flex 
-        margin: 1px
-        .phone-logo 
-          padding: 5px 
-          .svg-phone 
-            svg
-              height: 15px 
-        .phone-title
-          font-family: Montserrat
-          font-size: 20px 
-          font-weight: semibold 
-          padding: 5px 
-    
-    .contact-info  
-      .email
-        display: flex        
-        .email-logo
-          padding: 7px          
-          .svg-email 
-            svg
-              height: 15px 
-        .email-title      
-          font-size: 14px 
-          padding: 7px
 
-
-      .skype 
-        display: flex
-             
-        .skype-logo 
-          padding: 7px            
-          .svg-skype 
-            svg
-              height: 15px
-        .skype-title
-          padding: 7px
-          font-size: 14px
-          font-family: Comfortaa 
+        .skype 
+          display: flex
+               
+          .skype-logo 
+            padding: 7px            
+            .svg-skype 
+              svg
+                height: 15px
+          .skype-title
+            padding: 7px
+            font-size: 14px
+            font-family: Comfortaa 
 
 
   .lower-footer
@@ -93,7 +108,7 @@
     .Handcrafted
       color: $blackpearl
       display: flex
-      margin-left: 200px
+      justify-content: flex-end
       .Handcrafted-logo
         .Handcrafted-svg
           svg
@@ -113,3 +128,60 @@
       .Handcrafted-text
         padding-top: 20px
 
+
+@media (max-width: 540px)
+  .footer
+    .upper-footer
+      .left_side
+        .logo
+          .logosvg
+            width: 9rem 
+            margin-left: -2rem
+        .fotter_menu_wrapper
+          display: grid 
+          margin-left: 1rem
+          .menu_first_wrapper, .menu_second_wrapper 
+            -webkit-flex-direction: column 
+            -ms-flex-direction: column 
+            flex-direction: column  
+            .about_shool, .program, .method, .blog, .reviews, .contacts
+              p
+                margin-bottom: 5px
+            .about_shool
+              width: 26vh 
+              
+
+
+          
+
+      .rigt_side
+        margin-left: -12rem
+        margin-top: 4rem 
+        .phone_numbers         
+          .phone1, .phone2
+            .phone-logo
+            .phone-title
+              font-size: 14px
+
+            // , .blog, .reviews, .contacts
+            //   padding: 0px
+            //   width: 6rem 
+    .lower-footer
+      .Handcrafted
+        margin-left: 0px
+@media (max-width: 1025px)
+  .menu_first_wrapper, .menu_second_wrapper, .rigt_side
+    -webkit-flex-direction: column 
+    -ms-flex-direction: column 
+    flex-direction: column 
+    height: 8rem 
+    
+    .about_shool, .program, .method, .blog, .reviews, .contacts
+      padding: 0px
+      width: 6rem 
+      height: 2rem 
+  .lower-footer
+    .Handcrafted
+      margin-left: 0px
+ 
+  
